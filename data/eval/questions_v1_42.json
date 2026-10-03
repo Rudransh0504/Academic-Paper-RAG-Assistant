@@ -176,6 +176,28 @@
     "section": "introduction"
   },
   {
+    "qid": "q027",
+    "question": "How does Retrieval-Augmented Generation (RAG) allow large language models to utilize external information during inference without requiring retraining?",
+    "gold_chunk_id": "2507.23334v2_6",
+    "gold_paper_id": "2507.23334v2",
+    "gold_pages": [
+      3,
+      3
+    ],
+    "section": "introduction"
+  },
+  {
+    "qid": "q029",
+    "question": "How do large language models utilize multi-modal signals and real-time context to actively support human cognition in complex environments?",
+    "gold_chunk_id": "2504.13684v1_1",
+    "gold_paper_id": "2504.13684v1",
+    "gold_pages": [
+      1,
+      2
+    ],
+    "section": "introduction"
+  },
+  {
     "qid": "q032",
     "question": "How does increasing the size of the T5 generator model impact the performance of the passage aggregation and relevance-label sampling strategy in the Fusion-in-Decoder framework?",
     "gold_chunk_id": "2207.03030v1_15",
