@@ -1,0 +1,233 @@
+[
+  {
+    "qid": "q002",
+    "question": "What are the primary components included in EVOR-BENCH to evaluate RACG performance under realistic conditions?",
+    "gold_chunk_id": "2402.12317v2_3",
+    "gold_paper_id": "2402.12317v2",
+    "gold_pages": [
+      1,
+      2
+    ],
+    "section": "introduction"
+  },
+  {
+    "qid": "q003",
+    "question": "How do Audio-Text Joint Embeddings function as domain-specialized text embedding models for music-related applications?",
+    "gold_chunk_id": "2507.23334v2_5",
+    "gold_paper_id": "2507.23334v2",
+    "gold_pages": [
+      2,
+      3
+    ],
+    "section": "introduction"
+  },
+  {
+    "qid": "q006",
+    "question": "What is the impact of utilizing various knowledge sources, such as execution feedback, code snippets, and documentation, on the performance of ChatGPT and CodeLlama?",
+    "gold_chunk_id": "2402.12317v2_21",
+    "gold_paper_id": "2402.12317v2",
+    "gold_pages": [
+      6,
+      6
+    ],
+    "section": "results"
+  },
+  {
+    "qid": "q011",
+    "question": "How does manifold-aware rejection sampling select a synthetic identity code to replace the original face encoding while maintaining realism and distinctness?",
+    "gold_chunk_id": "2604.23584v1_14",
+    "gold_paper_id": "2604.23584v1",
+    "gold_pages": [
+      4,
+      4
+    ],
+    "section": "method"
+  },
+  {
+    "qid": "q012",
+    "question": "How does the R2AG approach address the semantic gap between large language models and retrievers compared to joint modeling methods?",
+    "gold_chunk_id": "2406.13249v2_8",
+    "gold_paper_id": "2406.13249v2",
+    "gold_pages": [
+      3,
+      3
+    ],
+    "section": "introduction"
+  },
+  {
+    "qid": "q014",
+    "question": "What are the key characteristics and sources of the instruction-following retrieval benchmarks, specifically FollowIR, MAIR, and Bright, used in the experiments?",
+    "gold_chunk_id": "2505.21439v1_39",
+    "gold_paper_id": "2505.21439v1",
+    "gold_pages": [
+      18,
+      18
+    ],
+    "section": "limitations"
+  },
+  {
+    "qid": "q015",
+    "question": "How does the Hydra framework address the issue of attention mode restoration to maintain inference-time correctness during retrieval fine-tuning?",
+    "gold_chunk_id": "2603.28554v3_13",
+    "gold_paper_id": "2603.28554v3",
+    "gold_pages": [
+      6,
+      6
+    ],
+    "section": "method"
+  },
+  {
+    "qid": "q017",
+    "question": "What approach do knowledge graphs with ontologies provide to resolve abbreviation and identity conflicts within a RAG system?",
+    "gold_chunk_id": "2508.14066v1_24",
+    "gold_paper_id": "2508.14066v1",
+    "gold_pages": [
+      8,
+      8
+    ],
+    "section": "method"
+  },
+  {
+    "qid": "q018",
+    "question": "What metric is commonly used to evaluate conversation response re-ranking in retrieval-based conversational search?",
+    "gold_chunk_id": "2301.05508v1_1",
+    "gold_paper_id": "2301.05508v1",
+    "gold_pages": [
+      1,
+      2
+    ],
+    "section": "introduction"
+  },
+  {
+    "qid": "q019",
+    "question": "What datasets and library are used to construct the patch-level retrieval database and enable efficient similarity search?",
+    "gold_chunk_id": "2506.06962v3_15",
+    "gold_paper_id": "2506.06962v3",
+    "gold_pages": [
+      6,
+      6
+    ],
+    "section": "experiment"
+  },
+  {
+    "qid": "q020",
+    "question": "What ROUGE-1 score does the CARROT framework achieve through its tree-based global search?",
+    "gold_chunk_id": "2411.00744v2_48",
+    "gold_paper_id": "2411.00744v2",
+    "gold_pages": [
+      11,
+      12
+    ],
+    "section": "method"
+  },
+  {
+    "qid": "q021",
+    "question": "How does removing the final one to two lines prior to an API call impact the Top-K accuracy and Mean Reciprocal Rank performance?",
+    "gold_chunk_id": "2509.25716v1_20",
+    "gold_paper_id": "2509.25716v1",
+    "gold_pages": [
+      12,
+      12
+    ],
+    "section": "method"
+  },
+  {
+    "qid": "q022",
+    "question": "What is the name of the general technique that divides the matching phase of a neural ranker into multiple segments based on heading position to adjust matching according to heading utility?",
+    "gold_chunk_id": "1811.08772v1_23",
+    "gold_paper_id": "1811.08772v1",
+    "gold_pages": [
+      10,
+      11
+    ],
+    "section": "method"
+  },
+  {
+    "qid": "q023",
+    "question": "What are the length characteristics of full scripts versus JSDoc summaries within the search index for Script Include APIs?",
+    "gold_chunk_id": "2509.25716v1_8",
+    "gold_paper_id": "2509.25716v1",
+    "gold_pages": [
+      4,
+      4
+    ],
+    "section": "related work"
+  },
+  {
+    "qid": "q024",
+    "question": "What impact do different evidence fusion strategies and effective expansion methods, such as Missing Paragraph Completion, have on answer F1 performance during retrieval?",
+    "gold_chunk_id": "2404.14464v1_20",
+    "gold_paper_id": "2404.14464v1",
+    "gold_pages": [
+      7,
+      7
+    ],
+    "section": "method"
+  },
+  {
+    "qid": "q026",
+    "question": "What security vulnerability arises from the parameter-free customization feature of Retrieval-Augmented Generation systems?",
+    "gold_chunk_id": "2502.00306v2_1",
+    "gold_paper_id": "2502.00306v2",
+    "gold_pages": [
+      1,
+      2
+    ],
+    "section": "introduction"
+  },
+  {
+    "qid": "q027",
+    "question": "How does Retrieval-Augmented Generation (RAG) allow large language models to utilize external information during inference without requiring retraining?",
+    "gold_chunk_id": "2507.23334v2_6",
+    "gold_paper_id": "2507.23334v2",
+    "gold_pages": [
+      3,
+      3
+    ],
+    "section": "introduction"
+  },
+  {
+    "qid": "q029",
+    "question": "How do large language models utilize multi-modal signals and real-time context to actively support human cognition in complex environments?",
+    "gold_chunk_id": "2504.13684v1_1",
+    "gold_paper_id": "2504.13684v1",
+    "gold_pages": [
+      1,
+      2
+    ],
+    "section": "introduction"
+  },
+  {
+    "qid": "q032",
+    "question": "How does increasing the size of the T5 generator model impact the performance of the passage aggregation and relevance-label sampling strategy in the Fusion-in-Decoder framework?",
+    "gold_chunk_id": "2207.03030v1_15",
+    "gold_paper_id": "2207.03030v1",
+    "gold_pages": [
+      4,
+      4
+    ],
+    "section": "results"
+  },
+  {
+    "qid": "q033",
+    "question": "What are the key limitations of existing face anonymization approaches, such as black-box masking, generative adversarial network-based face-swapping, and image filtering, in multi-modal retrieval tasks?",
+    "gold_chunk_id": "2604.23584v1_2",
+    "gold_paper_id": "2604.23584v1",
+    "gold_pages": [
+      1,
+      1
+    ],
+    "section": "introduction"
+  },
+  {
+    "qid": "q034",
+    "question": "What are the main stages involved in executing the DDRO framework for document retrieval?",
+    "gold_chunk_id": "2504.05181v2_15",
+    "gold_paper_id": "2504.05181v2",
+    "gold_pages": [
+      4,
+      4
+    ],
+    "section": "method"
+  }
+]

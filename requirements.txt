@@ -1,0 +1,10 @@
+pymupdf
+sentence-transformers
+faiss-cpu
+rank-bm25
+pandas
+numpy
+arxiv
+tqdm
+openai
+python-dotenv

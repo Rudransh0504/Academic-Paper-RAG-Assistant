@@ -1,0 +1,1520 @@
+[
+  {
+    "qid": "q001",
+    "question": "How does the Feature-Augmentation in Decoding (FAiD) method combine the retrieval-based distribution with the model's predicted distribution to sample the next token?",
+    "gold_chunk_id": "2506.06962v3_10",
+    "gold_paper_id": "2506.06962v3",
+    "gold_pages": [
+      4,
+      5
+    ],
+    "section": "introduction"
+  },
+  {
+    "qid": "q002",
+    "question": "What are the primary components included in EVOR-BENCH to evaluate RACG performance under realistic conditions?",
+    "gold_chunk_id": "2402.12317v2_3",
+    "gold_paper_id": "2402.12317v2",
+    "gold_pages": [
+      1,
+      2
+    ],
+    "section": "introduction"
+  },
+  {
+    "qid": "q003",
+    "question": "How do Audio-Text Joint Embeddings function as domain-specialized text embedding models for music-related applications?",
+    "gold_chunk_id": "2507.23334v2_5",
+    "gold_paper_id": "2507.23334v2",
+    "gold_pages": [
+      2,
+      3
+    ],
+    "section": "introduction"
+  },
+  {
+    "qid": "q004",
+    "question": "What does the IGMiRAG framework stand for, and how does it incorporate adaptive memory mining into its retrieval-augmented generation process?",
+    "gold_chunk_id": "2602.07525v1_63",
+    "gold_paper_id": "2602.07525v1",
+    "gold_pages": [
+      27,
+      28
+    ],
+    "section": "experiment"
+  },
+  {
+    "qid": "q005",
+    "question": "How does the hybrid retrieval and reranking approach combine results from dense vector search and sparse keyword search?",
+    "gold_chunk_id": "2510.22344v1_20",
+    "gold_paper_id": "2510.22344v1",
+    "gold_pages": [
+      6,
+      6
+    ],
+    "section": "method"
+  },
+  {
+    "qid": "q006",
+    "question": "What is the impact of utilizing various knowledge sources, such as execution feedback, code snippets, and documentation, on the performance of ChatGPT and CodeLlama?",
+    "gold_chunk_id": "2402.12317v2_21",
+    "gold_paper_id": "2402.12317v2",
+    "gold_pages": [
+      6,
+      6
+    ],
+    "section": "results"
+  },
+  {
+    "qid": "q007",
+    "question": "What specific retrieval paradigms and features are integrated into the model architecture designed to handle multi-vector data across numerous languages?",
+    "gold_chunk_id": "2601.05264v1_24",
+    "gold_paper_id": "2601.05264v1",
+    "gold_pages": [
+      23,
+      24
+    ],
+    "section": "introduction"
+  },
+  {
+    "qid": "q008",
+    "question": "What is the purpose of comparing early versus late chunking strategies in retrieval-augmented generation systems?",
+    "gold_chunk_id": "2504.19754v1_5",
+    "gold_paper_id": "2504.19754v1",
+    "gold_pages": [
+      3,
+      4
+    ],
+    "section": "method"
+  },
+  {
+    "qid": "q009",
+    "question": "What four evaluation metrics are used to compare the end-to-end performance of FAIR-RAG against baseline methods across four question-answering benchmarks?",
+    "gold_chunk_id": "2510.22344v1_40",
+    "gold_paper_id": "2510.22344v1",
+    "gold_pages": [
+      13,
+      13
+    ],
+    "section": "results"
+  },
+  {
+    "qid": "q010",
+    "question": "What operational tasks and decision-making applications are supported by modern retrieval-augmented generation (RAG) systems beyond standard information retrieval?",
+    "gold_chunk_id": "2508.14066v1_11",
+    "gold_paper_id": "2508.14066v1",
+    "gold_pages": [
+      4,
+      5
+    ],
+    "section": "method"
+  },
+  {
+    "qid": "q011",
+    "question": "How does manifold-aware rejection sampling select a synthetic identity code to replace the original face encoding while maintaining realism and distinctness?",
+    "gold_chunk_id": "2604.23584v1_14",
+    "gold_paper_id": "2604.23584v1",
+    "gold_pages": [
+      4,
+      4
+    ],
+    "section": "method"
+  },
+  {
+    "qid": "q012",
+    "question": "How does the R2AG approach address the semantic gap between large language models and retrievers compared to joint modeling methods?",
+    "gold_chunk_id": "2406.13249v2_8",
+    "gold_paper_id": "2406.13249v2",
+    "gold_pages": [
+      3,
+      3
+    ],
+    "section": "introduction"
+  },
+  {
+    "qid": "q013",
+    "question": "What are the results for the sufficient condition of robustness under RAGPart with np equal to 3 across various values of N and k?",
+    "gold_chunk_id": "2512.24268v1_33",
+    "gold_paper_id": "2512.24268v1",
+    "gold_pages": [
+      13,
+      14
+    ],
+    "section": "results"
+  },
+  {
+    "qid": "q014",
+    "question": "What are the key characteristics and sources of the instruction-following retrieval benchmarks, specifically FollowIR, MAIR, and Bright, used in the experiments?",
+    "gold_chunk_id": "2505.21439v1_39",
+    "gold_paper_id": "2505.21439v1",
+    "gold_pages": [
+      18,
+      18
+    ],
+    "section": "limitations"
+  },
+  {
+    "qid": "q015",
+    "question": "How does the Hydra framework address the issue of attention mode restoration to maintain inference-time correctness during retrieval fine-tuning?",
+    "gold_chunk_id": "2603.28554v3_13",
+    "gold_paper_id": "2603.28554v3",
+    "gold_pages": [
+      6,
+      6
+    ],
+    "section": "method"
+  },
+  {
+    "qid": "q016",
+    "question": "What percentage of answer content can be provided by the target layer when the knowledge dependency is classified as level 3 (Medium)?",
+    "gold_chunk_id": "2602.07525v1_58",
+    "gold_paper_id": "2602.07525v1",
+    "gold_pages": [
+      25,
+      25
+    ],
+    "section": "experiment"
+  },
+  {
+    "qid": "q017",
+    "question": "What approach do knowledge graphs with ontologies provide to resolve abbreviation and identity conflicts within a RAG system?",
+    "gold_chunk_id": "2508.14066v1_24",
+    "gold_paper_id": "2508.14066v1",
+    "gold_pages": [
+      8,
+      8
+    ],
+    "section": "method"
+  },
+  {
+    "qid": "q018",
+    "question": "What metric is commonly used to evaluate conversation response re-ranking in retrieval-based conversational search?",
+    "gold_chunk_id": "2301.05508v1_1",
+    "gold_paper_id": "2301.05508v1",
+    "gold_pages": [
+      1,
+      2
+    ],
+    "section": "introduction"
+  },
+  {
+    "qid": "q019",
+    "question": "What datasets and library are used to construct the patch-level retrieval database and enable efficient similarity search?",
+    "gold_chunk_id": "2506.06962v3_15",
+    "gold_paper_id": "2506.06962v3",
+    "gold_pages": [
+      6,
+      6
+    ],
+    "section": "experiment"
+  },
+  {
+    "qid": "q020",
+    "question": "What ROUGE-1 score does the CARROT framework achieve through its tree-based global search?",
+    "gold_chunk_id": "2411.00744v2_48",
+    "gold_paper_id": "2411.00744v2",
+    "gold_pages": [
+      11,
+      12
+    ],
+    "section": "method"
+  },
+  {
+    "qid": "q021",
+    "question": "How does removing the final one to two lines prior to an API call impact the Top-K accuracy and Mean Reciprocal Rank performance?",
+    "gold_chunk_id": "2509.25716v1_20",
+    "gold_paper_id": "2509.25716v1",
+    "gold_pages": [
+      12,
+      12
+    ],
+    "section": "method"
+  },
+  {
+    "qid": "q022",
+    "question": "What is the name of the general technique that divides the matching phase of a neural ranker into multiple segments based on heading position to adjust matching according to heading utility?",
+    "gold_chunk_id": "1811.08772v1_23",
+    "gold_paper_id": "1811.08772v1",
+    "gold_pages": [
+      10,
+      11
+    ],
+    "section": "method"
+  },
+  {
+    "qid": "q023",
+    "question": "What are the length characteristics of full scripts versus JSDoc summaries within the search index for Script Include APIs?",
+    "gold_chunk_id": "2509.25716v1_8",
+    "gold_paper_id": "2509.25716v1",
+    "gold_pages": [
+      4,
+      4
+    ],
+    "section": "related work"
+  },
+  {
+    "qid": "q024",
+    "question": "What impact do different evidence fusion strategies and effective expansion methods, such as Missing Paragraph Completion, have on answer F1 performance during retrieval?",
+    "gold_chunk_id": "2404.14464v1_20",
+    "gold_paper_id": "2404.14464v1",
+    "gold_pages": [
+      7,
+      7
+    ],
+    "section": "method"
+  },
+  {
+    "qid": "q025",
+    "question": "What evaluation metrics and strategies are typically employed when human-annotated datasets or reference answers are unavailable in a Retrieval-Augmented Generation (RAG) setting?",
+    "gold_chunk_id": "2309.15217v2_7",
+    "gold_paper_id": "2309.15217v2",
+    "gold_pages": [
+      2,
+      3
+    ],
+    "section": "related work"
+  },
+  {
+    "qid": "q026",
+    "question": "What security vulnerability arises from the parameter-free customization feature of Retrieval-Augmented Generation systems?",
+    "gold_chunk_id": "2502.00306v2_1",
+    "gold_paper_id": "2502.00306v2",
+    "gold_pages": [
+      1,
+      2
+    ],
+    "section": "introduction"
+  },
+  {
+    "qid": "q027",
+    "question": "How does Retrieval-Augmented Generation (RAG) allow large language models to utilize external information during inference without requiring retraining?",
+    "gold_chunk_id": "2507.23334v2_6",
+    "gold_paper_id": "2507.23334v2",
+    "gold_pages": [
+      3,
+      3
+    ],
+    "section": "introduction"
+  },
+  {
+    "qid": "q028",
+    "question": "How do different embedding strategies for incorporating metadata into retrieval-augmented generation pipelines compare in terms of retrieval accuracy and maintenance costs?",
+    "gold_chunk_id": "2601.11863v1_3",
+    "gold_paper_id": "2601.11863v1",
+    "gold_pages": [
+      2,
+      3
+    ],
+    "section": "introduction"
+  },
+  {
+    "qid": "q029",
+    "question": "How do large language models utilize multi-modal signals and real-time context to actively support human cognition in complex environments?",
+    "gold_chunk_id": "2504.13684v1_1",
+    "gold_paper_id": "2504.13684v1",
+    "gold_pages": [
+      1,
+      2
+    ],
+    "section": "introduction"
+  },
+  {
+    "qid": "q030",
+    "question": "How does the Expert Mind architecture address the knowledge transfer challenges caused by upcoming retirements in the energy sector?",
+    "gold_chunk_id": "2603.14541v1_3",
+    "gold_paper_id": "2603.14541v1",
+    "gold_pages": [
+      2,
+      3
+    ],
+    "section": "introduction"
+  },
+  {
+    "qid": "q031",
+    "question": "What impact does removing the look-ahead term have on retrieval effectiveness when evaluating planning-ahead guidance (PAG)?",
+    "gold_chunk_id": "2604.23396v1_24",
+    "gold_paper_id": "2604.23396v1",
+    "gold_pages": [
+      6,
+      6
+    ],
+    "section": "method"
+  },
+  {
+    "qid": "q032",
+    "question": "How does increasing the size of the T5 generator model impact the performance of the passage aggregation and relevance-label sampling strategy in the Fusion-in-Decoder framework?",
+    "gold_chunk_id": "2207.03030v1_15",
+    "gold_paper_id": "2207.03030v1",
+    "gold_pages": [
+      4,
+      4
+    ],
+    "section": "results"
+  },
+  {
+    "qid": "q033",
+    "question": "What are the key limitations of existing face anonymization approaches, such as black-box masking, generative adversarial network-based face-swapping, and image filtering, in multi-modal retrieval tasks?",
+    "gold_chunk_id": "2604.23584v1_2",
+    "gold_paper_id": "2604.23584v1",
+    "gold_pages": [
+      1,
+      1
+    ],
+    "section": "introduction"
+  },
+  {
+    "qid": "q034",
+    "question": "What are the main stages involved in executing the DDRO framework for document retrieval?",
+    "gold_chunk_id": "2504.05181v2_15",
+    "gold_paper_id": "2504.05181v2",
+    "gold_pages": [
+      4,
+      4
+    ],
+    "section": "method"
+  },
+  {
+    "qid": "q035",
+    "question": "How do different heading positions (title, intermediate, and main) act as signals for heading utility in the context of CAR?",
+    "gold_chunk_id": "1811.08772v1_39",
+    "gold_paper_id": "1811.08772v1",
+    "gold_pages": [
+      17,
+      18
+    ],
+    "section": "results"
+  },
+  {
+    "qid": "q036",
+    "question": "How does product quantization compress document vectors to create compact identifiers in generative retrieval?",
+    "gold_chunk_id": "2504.05181v2_16",
+    "gold_paper_id": "2504.05181v2",
+    "gold_pages": [
+      4,
+      4
+    ],
+    "section": "method"
+  },
+  {
+    "qid": "q037",
+    "question": "What are the limitations regarding the tasks and ethical concerns evaluated for the TOR framework?",
+    "gold_chunk_id": "2404.14464v1_28",
+    "gold_paper_id": "2404.14464v1",
+    "gold_pages": [
+      9,
+      9
+    ],
+    "section": "limitations"
+  },
+  {
+    "qid": "q038",
+    "question": "What source was used to sample the videos for curating the aligned video caption dataset?",
+    "gold_chunk_id": "2405.17706v1_3",
+    "gold_paper_id": "2405.17706v1",
+    "gold_pages": [
+      2,
+      2
+    ],
+    "section": "introduction"
+  },
+  {
+    "qid": "q039",
+    "question": "How does the policy tree search modeling approach overcome the limitations of the greedy method in selecting the optimal chunk combination order?",
+    "gold_chunk_id": "2411.00744v2_16",
+    "gold_paper_id": "2411.00744v2",
+    "gold_pages": [
+      5,
+      5
+    ],
+    "section": "related work"
+  },
+  {
+    "qid": "q040",
+    "question": "What are the three stages of the PAG optimization pipeline used to train a single backbone model for document retrieval?",
+    "gold_chunk_id": "2604.23396v1_11",
+    "gold_paper_id": "2604.23396v1",
+    "gold_pages": [
+      3,
+      4
+    ],
+    "section": "related work"
+  },
+  {
+    "qid": "q041",
+    "question": "Which aggregation method is adopted for the remainder of the research on RAGPart due to the significant drop in success rate caused by intersection-based aggregation over golden documents?",
+    "gold_chunk_id": "2512.24268v1_24",
+    "gold_paper_id": "2512.24268v1",
+    "gold_pages": [
+      10,
+      10
+    ],
+    "section": "results"
+  },
+  {
+    "qid": "q042",
+    "question": "What dietary plant compounds act as inhibitors to protect against toxicity caused by the transformation of the aryl hydrocarbon receptor?",
+    "gold_chunk_id": "2502.00306v2_63",
+    "gold_paper_id": "2502.00306v2",
+    "gold_pages": [
+      21,
+      21
+    ],
+    "section": "method"
+  },
+  {
+    "qid": "q043",
+    "question": "What methodologies are utilized within the Multimodal Knowledge Capture layer of the Expert Mind system to gather information from specialists?",
+    "gold_chunk_id": "2603.14541v1_4",
+    "gold_paper_id": "2603.14541v1",
+    "gold_pages": [
+      2,
+      3
+    ],
+    "section": "introduction"
+  },
+  {
+    "qid": "q044",
+    "question": "What performance metrics are achieved by models in the 1-5 billion parameter size category when integrating InF-Embed?",
+    "gold_chunk_id": "2505.21439v1_23",
+    "gold_paper_id": "2505.21439v1",
+    "gold_pages": [
+      8,
+      8
+    ],
+    "section": "introduction"
+  },
+  {
+    "qid": "q045",
+    "question": "What are the components and configurations of the dual-head architecture used in the Hydra model for retrieval and generation?",
+    "gold_chunk_id": "2603.28554v3_10",
+    "gold_paper_id": "2603.28554v3",
+    "gold_pages": [
+      5,
+      5
+    ],
+    "section": "method"
+  },
+  {
+    "qid": "q046",
+    "question": "How does the spaCy-based system automatically generate a coherent literature review segment from multiple input research papers?",
+    "gold_chunk_id": "2411.18583v1_8",
+    "gold_paper_id": "2411.18583v1",
+    "gold_pages": [
+      3,
+      3
+    ],
+    "section": "introduction"
+  },
+  {
+    "qid": "q047",
+    "question": "What architectural pattern utilizes trust metrics, adaptive context weighting, and source filtering for high-stakes decision systems such as finance and safety-critical domains?",
+    "gold_chunk_id": "2601.05264v1_18",
+    "gold_paper_id": "2601.05264v1",
+    "gold_pages": [
+      19,
+      20
+    ],
+    "section": "introduction"
+  },
+  {
+    "qid": "q048",
+    "question": "How do unified and prefix metadata embedding strategies impact the separation between matching and non-matching company and year pairs across metrics such as mean margin, Cohen's d, and AUC?",
+    "gold_chunk_id": "2601.11863v1_19",
+    "gold_paper_id": "2601.11863v1",
+    "gold_pages": [
+      11,
+      12
+    ],
+    "section": "method"
+  },
+  {
+    "qid": "q049",
+    "question": "Why are numerical scores obtained using the KILT benchmark incomparable to those from the original versions of individual tasks?",
+    "gold_chunk_id": "2207.03030v1_12",
+    "gold_paper_id": "2207.03030v1",
+    "gold_pages": [
+      3,
+      4
+    ],
+    "section": "results"
+  },
+  {
+    "qid": "q050",
+    "question": "What practical recommendations are suggested for developers and researchers when building and deploying generative retrieval models with corpus constraints?",
+    "gold_chunk_id": "2504.09935v1_36",
+    "gold_paper_id": "2504.09935v1",
+    "gold_pages": [
+      8,
+      8
+    ],
+    "section": "limitations"
+  },
+  {
+    "qid": "q051",
+    "question": "What limitation do previous evaluations of generative AI's impact on critical thinking share according to the critique of output-based methodologies?",
+    "gold_chunk_id": "2504.14689v1_4",
+    "gold_paper_id": "2504.14689v1",
+    "gold_pages": [
+      2,
+      3
+    ],
+    "section": "introduction"
+  },
+  {
+    "qid": "q052",
+    "question": "What are the primary limitations and future research directions regarding the use of mechanistic interpretability for evaluating citation faithfulness in large language models?",
+    "gold_chunk_id": "2606.28358v2_21",
+    "gold_paper_id": "2606.28358v2",
+    "gold_pages": [
+      11,
+      11
+    ],
+    "section": "results"
+  },
+  {
+    "qid": "q053",
+    "question": "How does the retrieval-aware prompting strategy impact large language model performance on the NQ-10 dataset as the volume of retrieved documents grows?",
+    "gold_chunk_id": "2406.13249v2_23",
+    "gold_paper_id": "2406.13249v2",
+    "gold_pages": [
+      7,
+      8
+    ],
+    "section": "method"
+  },
+  {
+    "qid": "q054",
+    "question": "What parameter scales and design objectives characterize Google DeepMind's Gemma family of large language models?",
+    "gold_chunk_id": "2503.16581v1_23",
+    "gold_paper_id": "2503.16581v1",
+    "gold_pages": [
+      6,
+      6
+    ],
+    "section": "method"
+  },
+  {
+    "qid": "q055",
+    "question": "What specific multimodal embeddings are evaluated and compared for retrieving top results in the video-enriched retrieval-augmented generation experiments?",
+    "gold_chunk_id": "2405.17706v1_6",
+    "gold_paper_id": "2405.17706v1",
+    "gold_pages": [
+      2,
+      3
+    ],
+    "section": "introduction"
+  },
+  {
+    "qid": "q056",
+    "question": "How was the dataset of supporting and distractor documents constructed for analyzing citation behavior in retrieval-augmented generation models?",
+    "gold_chunk_id": "2606.28358v2_6",
+    "gold_paper_id": "2606.28358v2",
+    "gold_pages": [
+      4,
+      4
+    ],
+    "section": "method"
+  },
+  {
+    "qid": "q057",
+    "question": "What theoretical limitations of constrained auto-regressive beam search in generative retrieval models are identified when analyzed from the perspectives of constraints and beam search?",
+    "gold_chunk_id": "2504.09935v1_5",
+    "gold_paper_id": "2504.09935v1",
+    "gold_pages": [
+      2,
+      2
+    ],
+    "section": "introduction"
+  },
+  {
+    "qid": "q058",
+    "question": "What are the architectural limitations of traditional single-agent retrieval-augmented generation systems when handling complex queries across varied data environments?",
+    "gold_chunk_id": "2412.05838v1_18",
+    "gold_paper_id": "2412.05838v1",
+    "gold_pages": [
+      8,
+      9
+    ],
+    "section": "related work"
+  },
+  {
+    "qid": "q059",
+    "question": "How do practitioners typically select the configuration components of a retrieval-augmented generation pipeline?",
+    "gold_chunk_id": "2609.31660v1_2",
+    "gold_paper_id": "2609.31660v1",
+    "gold_pages": [
+      1,
+      2
+    ],
+    "section": "introduction"
+  },
+  {
+    "qid": "q060",
+    "question": "What are the main research contributions and evaluations regarding the use of large language models and natural language processing in automated literature reviews?",
+    "gold_chunk_id": "2411.18583v1_5",
+    "gold_paper_id": "2411.18583v1",
+    "gold_pages": [
+      2,
+      2
+    ],
+    "section": "introduction"
+  },
+  {
+    "qid": "q061",
+    "question": "What dense retriever model is utilized across all evaluated methods during the benchmark experiments?",
+    "gold_chunk_id": "2510.22344v1_33",
+    "gold_paper_id": "2510.22344v1",
+    "gold_pages": [
+      11,
+      11
+    ],
+    "section": "method"
+  },
+  {
+    "qid": "q062",
+    "question": "What corpus is used for experiments alongside the data sourced from Zeng et al.?",
+    "gold_chunk_id": "2504.09935v1_35",
+    "gold_paper_id": "2504.09935v1",
+    "gold_pages": [
+      8,
+      8
+    ],
+    "section": "limitations"
+  },
+  {
+    "qid": "q063",
+    "question": "Which vulnerability layers are evaluated in the Trust Surface Analysis of RAG systems?",
+    "gold_chunk_id": "2601.05264v1_49",
+    "gold_paper_id": "2601.05264v1",
+    "gold_pages": [
+      44,
+      46
+    ],
+    "section": "introduction"
+  },
+  {
+    "qid": "q064",
+    "question": "What benchmark collection is chosen for evaluating the literature review generation procedures?",
+    "gold_chunk_id": "2411.18583v1_2",
+    "gold_paper_id": "2411.18583v1",
+    "gold_pages": [
+      1,
+      2
+    ],
+    "section": "introduction"
+  },
+  {
+    "qid": "q065",
+    "question": "What is the purpose of the Phantom framework in the context of retrieval-augmented generation security?",
+    "gold_chunk_id": "2601.05264v1_50",
+    "gold_paper_id": "2601.05264v1",
+    "gold_pages": [
+      45,
+      47
+    ],
+    "section": "introduction"
+  },
+  {
+    "qid": "q066",
+    "question": "What metrics and automated annotation algorithms does the RAG,Reward framework establish for evaluating generation quality?",
+    "gold_chunk_id": "2601.05264v1_59",
+    "gold_paper_id": "2601.05264v1",
+    "gold_pages": [
+      54,
+      55
+    ],
+    "section": "results"
+  },
+  {
+    "qid": "q067",
+    "question": "What specific failure mode occurs when a relevant document's prefix falls outside the beam of width k during generative retrieval?",
+    "gold_chunk_id": "2604.23396v1_1",
+    "gold_paper_id": "2604.23396v1",
+    "gold_pages": [
+      1,
+      1
+    ],
+    "section": "introduction"
+  },
+  {
+    "qid": "q068",
+    "question": "How does the hierarchical heterogeneous hypergraph structure function within the IGMiRAG architecture?",
+    "gold_chunk_id": "2602.07525v1_11",
+    "gold_paper_id": "2602.07525v1",
+    "gold_pages": [
+      4,
+      4
+    ],
+    "section": "introduction"
+  },
+  {
+    "qid": "q069",
+    "question": "Which specialized database agent is optimized for handling graph data and managing relationships between entities in graph-based databases?",
+    "gold_chunk_id": "2412.05838v1_24",
+    "gold_paper_id": "2412.05838v1",
+    "gold_pages": [
+      10,
+      11
+    ],
+    "section": "related work"
+  },
+  {
+    "qid": "q070",
+    "question": "How does QA-RAG improve the overall quality of generated outputs?",
+    "gold_chunk_id": "2504.16883v1_0",
+    "gold_paper_id": "2504.16883v1",
+    "gold_pages": [
+      1,
+      2
+    ],
+    "section": "introduction"
+  },
+  {
+    "qid": "q071",
+    "question": "What is the answerable scope for Layer 1 within the Hierarchical Hypergraph Architecture?",
+    "gold_chunk_id": "2602.07525v1_55",
+    "gold_paper_id": "2602.07525v1",
+    "gold_pages": [
+      24,
+      24
+    ],
+    "section": "experiment"
+  },
+  {
+    "qid": "q072",
+    "question": "What datasets are used to compare the reproduced effectiveness of PAG in Table 3?",
+    "gold_chunk_id": "2604.23396v1_20",
+    "gold_paper_id": "2604.23396v1",
+    "gold_pages": [
+      5,
+      5
+    ],
+    "section": "results"
+  },
+  {
+    "qid": "q073",
+    "question": "How does Contextual Retrieval with Rank Fusion address the issue of document chunks lacking sufficient background information?",
+    "gold_chunk_id": "2504.19754v1_7",
+    "gold_paper_id": "2504.19754v1",
+    "gold_pages": [
+      4,
+      5
+    ],
+    "section": "method"
+  },
+  {
+    "qid": "q074",
+    "question": "How does Algorithm 1 achieve a complexity of $O(MN \\log N \\cdot O(\\text{Algo } 1))$ for the matching score calculation?",
+    "gold_chunk_id": "2405.20245v1_6",
+    "gold_paper_id": "2405.20245v1",
+    "gold_pages": [
+      2,
+      2
+    ],
+    "section": "introduction"
+  },
+  {
+    "qid": "q075",
+    "question": "What limitation do perplexity-based defenses exhibit when evaluated against interpretable attacks like AdvRAGgen?",
+    "gold_chunk_id": "2512.24268v1_21",
+    "gold_paper_id": "2512.24268v1",
+    "gold_pages": [
+      8,
+      8
+    ],
+    "section": "results"
+  },
+  {
+    "qid": "q076",
+    "question": "How does the Wearable Reasoner provide feedback to enhance rational decision-making?",
+    "gold_chunk_id": "2504.17204v1_2",
+    "gold_paper_id": "2504.17204v1",
+    "gold_pages": [
+      2,
+      3
+    ],
+    "section": "related work"
+  },
+  {
+    "qid": "q077",
+    "question": "What tool is mentioned in the text that can increase coding quality and efficiency through the mechanism of autocomplete?",
+    "gold_chunk_id": "2504.14689v1_0",
+    "gold_paper_id": "2504.14689v1",
+    "gold_pages": [
+      1,
+      1
+    ],
+    "section": "introduction"
+  },
+  {
+    "qid": "q078",
+    "question": "What metric does the passage mention as using an approach similar to its row matching method, but operating in two dimensions instead of one?",
+    "gold_chunk_id": "2405.20245v1_10",
+    "gold_paper_id": "2405.20245v1",
+    "gold_pages": [
+      3,
+      3
+    ],
+    "section": "limitations"
+  },
+  {
+    "qid": "q079",
+    "question": "Which specific large language model achieved the highest score for context relevance in the evaluation?",
+    "gold_chunk_id": "2503.16581v1_27",
+    "gold_paper_id": "2503.16581v1",
+    "gold_pages": [
+      7,
+      7
+    ],
+    "section": "results"
+  },
+  {
+    "qid": "q080",
+    "question": "How does the Extended Coevolutionary Theory address the limitations of traditional game theory when modeling dynamic multi-agent systems?",
+    "gold_chunk_id": "2412.05838v1_13",
+    "gold_paper_id": "2412.05838v1",
+    "gold_pages": [
+      6,
+      7
+    ],
+    "section": "related work"
+  },
+  {
+    "qid": "q081",
+    "question": "What are the limitations of traditional face anonymization techniques like Gaussian blurring when applied within multi-modal retrieval-augmented generation systems?",
+    "gold_chunk_id": "2604.23584v1_1",
+    "gold_paper_id": "2604.23584v1",
+    "gold_pages": [
+      1,
+      1
+    ],
+    "section": "introduction"
+  },
+  {
+    "qid": "q082",
+    "question": "What metric improvements are observed when embedding-based models are trained on InF-IR?",
+    "gold_chunk_id": "2505.21439v1_25",
+    "gold_paper_id": "2505.21439v1",
+    "gold_pages": [
+      8,
+      9
+    ],
+    "section": "experiment"
+  },
+  {
+    "qid": "q083",
+    "question": "What score does Janus-Pro integrated with FAiD achieve on the GenEval benchmark?",
+    "gold_chunk_id": "2506.06962v3_5",
+    "gold_paper_id": "2506.06962v3",
+    "gold_pages": [
+      3,
+      3
+    ],
+    "section": "introduction"
+  },
+  {
+    "qid": "q084",
+    "question": "What specific index type houses the multi-match query utilized for blending diverse search techniques?",
+    "gold_chunk_id": "2404.07220v2_6",
+    "gold_paper_id": "2404.07220v2",
+    "gold_pages": [
+      2,
+      2
+    ],
+    "section": "method"
+  },
+  {
+    "qid": "q085",
+    "question": "What standard solution addresses the inability of large language models to answer queries regarding recent occurrences or infrequently discussed facts?",
+    "gold_chunk_id": "2309.15217v2_1",
+    "gold_paper_id": "2309.15217v2",
+    "gold_pages": [
+      1,
+      1
+    ],
+    "section": "introduction"
+  },
+  {
+    "qid": "q086",
+    "question": "How does the PACRR model perform when combined with heading position contextual vectors on the CAR dataset according to manual relevance judgments?",
+    "gold_chunk_id": "1811.08772v1_35",
+    "gold_paper_id": "1811.08772v1",
+    "gold_pages": [
+      15,
+      16
+    ],
+    "section": "results"
+  },
+  {
+    "qid": "q087",
+    "question": "In the RAGMask approach, how are retrieved documents sanitized during the second stage?",
+    "gold_chunk_id": "2512.24268v1_11",
+    "gold_paper_id": "2512.24268v1",
+    "gold_pages": [
+      5,
+      5
+    ],
+    "section": "method"
+  },
+  {
+    "qid": "q088",
+    "question": "What are the limitations of traditional vector-based retrieval when applied to Form 10-K filings?",
+    "gold_chunk_id": "2601.11863v1_2",
+    "gold_paper_id": "2601.11863v1",
+    "gold_pages": [
+      2,
+      3
+    ],
+    "section": "introduction"
+  },
+  {
+    "qid": "q089",
+    "question": "What metric is utilized by the authors alongside query-answer pairs and knowledge base items to address noisy labels in knowledge-intensive tasks?",
+    "gold_chunk_id": "2207.03030v1_1",
+    "gold_paper_id": "2207.03030v1",
+    "gold_pages": [
+      1,
+      1
+    ],
+    "section": "introduction"
+  },
+  {
+    "qid": "q090",
+    "question": "What evaluation methodology was used in the ablation study to quantify the contribution of each module in FAIR-RAG?",
+    "gold_chunk_id": "2510.22344v1_42",
+    "gold_paper_id": "2510.22344v1",
+    "gold_pages": [
+      13,
+      13
+    ],
+    "section": "results"
+  },
+  {
+    "qid": "q091",
+    "question": "What benchmark was introduced by Pipitone and Alami (2024) to assess retrieval precision for legal queries?",
+    "gold_chunk_id": "2503.16581v1_1",
+    "gold_paper_id": "2503.16581v1",
+    "gold_pages": [
+      1,
+      1
+    ],
+    "section": "introduction"
+  },
+  {
+    "qid": "q092",
+    "question": "Which specific evaluation datasets taken from the BEIR benchmark are utilized in the assessment of the attack?",
+    "gold_chunk_id": "2502.00306v2_28",
+    "gold_paper_id": "2502.00306v2",
+    "gold_pages": [
+      7,
+      8
+    ],
+    "section": "experiment"
+  },
+  {
+    "qid": "q093",
+    "question": "What specific version of the TREC CAR collection is utilized for training and evaluation purposes in the experiments?",
+    "gold_chunk_id": "1811.08772v1_30",
+    "gold_paper_id": "1811.08772v1",
+    "gold_pages": [
+      13,
+      14
+    ],
+    "section": "experiment"
+  },
+  {
+    "qid": "q094",
+    "question": "What role does Agentic RAG play in relation to standard RAG according to the text?",
+    "gold_chunk_id": "2411.00744v2_1",
+    "gold_paper_id": "2411.00744v2",
+    "gold_pages": [
+      1,
+      1
+    ],
+    "section": "introduction"
+  },
+  {
+    "qid": "q095",
+    "question": "What component does R2AG utilize to resolve the semantic discrepancy between retrievers and large language models?",
+    "gold_chunk_id": "2406.13249v2_1",
+    "gold_paper_id": "2406.13249v2",
+    "gold_pages": [
+      1,
+      1
+    ],
+    "section": "introduction"
+  },
+  {
+    "qid": "q096",
+    "question": "What specific tool was utilized for Structured Generation when experimenting with Hermes 2 Pro -Mistral 7B?",
+    "gold_chunk_id": "2405.20245v1_13",
+    "gold_paper_id": "2405.20245v1",
+    "gold_pages": [
+      3,
+      3
+    ],
+    "section": "method"
+  },
+  {
+    "qid": "q097",
+    "question": "What backbone model is used in the custom implementation of RA-CM3 to ensure a fair comparison?",
+    "gold_chunk_id": "2506.06962v3_28",
+    "gold_paper_id": "2506.06962v3",
+    "gold_pages": [
+      14,
+      15
+    ],
+    "section": "experiment"
+  },
+  {
+    "qid": "q098",
+    "question": "Which dataset is mentioned as a benchmark where supervised models perform well for multi-hop question answering?",
+    "gold_chunk_id": "2404.14464v1_5",
+    "gold_paper_id": "2404.14464v1",
+    "gold_pages": [
+      2,
+      3
+    ],
+    "section": "related work"
+  },
+  {
+    "qid": "q099",
+    "question": "What is the name of the strong generative retrieval baseline used alongside PAG to evaluate robustness against query variations?",
+    "gold_chunk_id": "2604.23396v1_40",
+    "gold_paper_id": "2604.23396v1",
+    "gold_pages": [
+      10,
+      10
+    ],
+    "section": "method"
+  },
+  {
+    "qid": "q100",
+    "question": "What repository hosts the source code for RAGMate?",
+    "gold_chunk_id": "2601.11863v1_1",
+    "gold_paper_id": "2601.11863v1",
+    "gold_pages": [
+      1,
+      2
+    ],
+    "section": "introduction"
+  },
+  {
+    "qid": "q101",
+    "question": "How does FAIR-RAG achieve efficient computational resource usage during internal task execution?",
+    "gold_chunk_id": "2510.22344v1_24",
+    "gold_paper_id": "2510.22344v1",
+    "gold_pages": [
+      8,
+      8
+    ],
+    "section": "method"
+  },
+  {
+    "qid": "q102",
+    "question": "What dataset is used for performing targeted interventions to validate and steer the identified components?",
+    "gold_chunk_id": "2606.28358v2_10",
+    "gold_paper_id": "2606.28358v2",
+    "gold_pages": [
+      6,
+      6
+    ],
+    "section": "results"
+  },
+  {
+    "qid": "q103",
+    "question": "How many total interviews were conducted using the guidelines by Adams?",
+    "gold_chunk_id": "2508.14066v1_7",
+    "gold_paper_id": "2508.14066v1",
+    "gold_pages": [
+      3,
+      4
+    ],
+    "section": "method"
+  },
+  {
+    "qid": "q104",
+    "question": "What baseline model capabilities are required for deploying the TOR framework?",
+    "gold_chunk_id": "2404.14464v1_26",
+    "gold_paper_id": "2404.14464v1",
+    "gold_pages": [
+      9,
+      9
+    ],
+    "section": "limitations"
+  },
+  {
+    "qid": "q105",
+    "question": "What is the name of the first comprehensive music-specific vector database created for retrieval-augmented generation in this work?",
+    "gold_chunk_id": "2507.23334v2_3",
+    "gold_paper_id": "2507.23334v2",
+    "gold_pages": [
+      1,
+      2
+    ],
+    "section": "introduction"
+  },
+  {
+    "qid": "q106",
+    "question": "What accuracy percentage did the Sparse EncodeR utilizing Best Fields achieve on the TREC-COVID dataset?",
+    "gold_chunk_id": "2404.07220v2_8",
+    "gold_paper_id": "2404.07220v2",
+    "gold_pages": [
+      2,
+      3
+    ],
+    "section": "method"
+  },
+  {
+    "qid": "q107",
+    "question": "What embedding model is utilized for training the configuration agent within CARROT?",
+    "gold_chunk_id": "2411.00744v2_35",
+    "gold_paper_id": "2411.00744v2",
+    "gold_pages": [
+      9,
+      9
+    ],
+    "section": "related work"
+  },
+  {
+    "qid": "q108",
+    "question": "How does ColQwen3.5 handle the preservation of the base model generation head during training?",
+    "gold_chunk_id": "2603.28554v3_14",
+    "gold_paper_id": "2603.28554v3",
+    "gold_pages": [
+      6,
+      7
+    ],
+    "section": "method"
+  },
+  {
+    "qid": "q109",
+    "question": "What retrieval paradigm utilizes encoder-decoder architectures functioning as differentiable search indexes?",
+    "gold_chunk_id": "2504.05181v2_1",
+    "gold_paper_id": "2504.05181v2",
+    "gold_pages": [
+      1,
+      1
+    ],
+    "section": "introduction"
+  },
+  {
+    "qid": "q110",
+    "question": "How much time does CARROT require for per-corpus indexing?",
+    "gold_chunk_id": "2411.00744v2_45",
+    "gold_paper_id": "2411.00744v2",
+    "gold_pages": [
+      11,
+      11
+    ],
+    "section": "method"
+  },
+  {
+    "qid": "q111",
+    "question": "What MTEB rank does the Stella-V5 embedding model achieve according to the provided text?",
+    "gold_chunk_id": "2504.19754v1_12",
+    "gold_paper_id": "2504.19754v1",
+    "gold_pages": [
+      7,
+      8
+    ],
+    "section": "method"
+  },
+  {
+    "qid": "q112",
+    "question": "What accuracy percentage was achieved by participants exposed to tailored warnings in high-level hallucination cases?",
+    "gold_chunk_id": "2504.16883v1_6",
+    "gold_paper_id": "2504.16883v1",
+    "gold_pages": [
+      3,
+      3
+    ],
+    "section": "results"
+  },
+  {
+    "qid": "q113",
+    "question": "What are some potential industries suggested for the future application of Expert Mind outside of the energy sector?",
+    "gold_chunk_id": "2603.14541v1_12",
+    "gold_paper_id": "2603.14541v1",
+    "gold_pages": [
+      5,
+      6
+    ],
+    "section": "limitations"
+  },
+  {
+    "qid": "q114",
+    "question": "How does the Hydra architecture toggle between retrieval and generation modes at inference time?",
+    "gold_chunk_id": "2603.28554v3_5",
+    "gold_paper_id": "2603.28554v3",
+    "gold_pages": [
+      2,
+      3
+    ],
+    "section": "related work"
+  },
+  {
+    "qid": "q115",
+    "question": "How does the vocabulary size $k$ scale with respect to the document length ratio according to the asymptotic analysis in Appendix A?",
+    "gold_chunk_id": "2504.09935v1_14",
+    "gold_paper_id": "2504.09935v1",
+    "gold_pages": [
+      3,
+      4
+    ],
+    "section": "related work"
+  },
+  {
+    "qid": "q116",
+    "question": "What is the per-image latency achieved by integrating Latent Consistency Model distillation into the pipeline?",
+    "gold_chunk_id": "2604.23584v1_25",
+    "gold_paper_id": "2604.23584v1",
+    "gold_pages": [
+      7,
+      7
+    ],
+    "section": "method"
+  },
+  {
+    "qid": "q117",
+    "question": "What performance improvement does CodeLlama achieve when documentation is added to the knowledge soup containing execution feedback and code snippets?",
+    "gold_chunk_id": "2402.12317v2_22",
+    "gold_paper_id": "2402.12317v2",
+    "gold_pages": [
+      6,
+      7
+    ],
+    "section": "results"
+  },
+  {
+    "qid": "q118",
+    "question": "How does the inclusion of the LQDM loss affect the performance of R2-Former in ablation studies?",
+    "gold_chunk_id": "2406.13249v2_22",
+    "gold_paper_id": "2406.13249v2",
+    "gold_pages": [
+      7,
+      7
+    ],
+    "section": "method"
+  },
+  {
+    "qid": "q119",
+    "question": "What dataset from Hugging Face is utilized for the research work?",
+    "gold_chunk_id": "2411.18583v1_6",
+    "gold_paper_id": "2411.18583v1",
+    "gold_pages": [
+      2,
+      2
+    ],
+    "section": "introduction"
+  },
+  {
+    "qid": "q120",
+    "question": "How does the performance of R2AG compare to foundation language models utilizing standard retrieval-augmented generation?",
+    "gold_chunk_id": "2406.13249v2_20",
+    "gold_paper_id": "2406.13249v2",
+    "gold_pages": [
+      6,
+      7
+    ],
+    "section": "method"
+  },
+  {
+    "qid": "q121",
+    "question": "What specific approach demonstrates notable performance gains on out-of-domain tasks through increases in scale and training data?",
+    "gold_chunk_id": "2504.09935v1_3",
+    "gold_paper_id": "2504.09935v1",
+    "gold_pages": [
+      1,
+      2
+    ],
+    "section": "introduction"
+  },
+  {
+    "qid": "q122",
+    "question": "How does URaG combine retrieval and generation tasks within a shared vision-language model?",
+    "gold_chunk_id": "2603.28554v3_2",
+    "gold_paper_id": "2603.28554v3",
+    "gold_pages": [
+      2,
+      2
+    ],
+    "section": "introduction"
+  },
+  {
+    "qid": "q123",
+    "question": "Which wearable live fact-checking system utilizes smartwatches or rings to deliver discreet vibrational alerts upon detecting potentially false statements?",
+    "gold_chunk_id": "2504.17204v1_0",
+    "gold_paper_id": "2504.17204v1",
+    "gold_pages": [
+      1,
+      2
+    ],
+    "section": "introduction"
+  },
+  {
+    "qid": "q124",
+    "question": "What chunk optimization strategies are mentioned for retriever improvements in RAG systems?",
+    "gold_chunk_id": "2508.14066v1_5",
+    "gold_paper_id": "2508.14066v1",
+    "gold_pages": [
+      3,
+      3
+    ],
+    "section": "related work"
+  },
+  {
+    "qid": "q125",
+    "question": "How does MPNet-base perform on table-derived content within the regulatory-document setting compared to general-purpose semantic-similarity benchmarks?",
+    "gold_chunk_id": "2609.31660v1_18",
+    "gold_paper_id": "2609.31660v1",
+    "gold_pages": [
+      11,
+      11
+    ],
+    "section": "discussion"
+  },
+  {
+    "qid": "q126",
+    "question": "What mechanism pairs a retriever with a language generator to ground outputs in external knowledge?",
+    "gold_chunk_id": "2606.28358v2_3",
+    "gold_paper_id": "2606.28358v2",
+    "gold_pages": [
+      3,
+      3
+    ],
+    "section": "related work"
+  },
+  {
+    "qid": "q127",
+    "question": "What performance improvements does the multi-task sampling technique achieve on the TriviaQA dataset?",
+    "gold_chunk_id": "2207.03030v1_4",
+    "gold_paper_id": "2207.03030v1",
+    "gold_pages": [
+      2,
+      2
+    ],
+    "section": "introduction"
+  },
+  {
+    "qid": "q128",
+    "question": "How were oversized datasets handled during the multi-task training process for the KILT benchmark?",
+    "gold_chunk_id": "2207.03030v1_7",
+    "gold_paper_id": "2207.03030v1",
+    "gold_pages": [
+      2,
+      3
+    ],
+    "section": "experiment"
+  },
+  {
+    "qid": "q129",
+    "question": "What are the main functions provided by the AI-based chatbot and Application Interface in the Healthcare Prognosis Interactive System?",
+    "gold_chunk_id": "2411.18583v1_15",
+    "gold_paper_id": "2411.18583v1",
+    "gold_pages": [
+      5,
+      5
+    ],
+    "section": "introduction"
+  },
+  {
+    "qid": "q130",
+    "question": "How many documents comprise the corpus for the FIQA dataset?",
+    "gold_chunk_id": "2512.24268v1_18",
+    "gold_paper_id": "2512.24268v1",
+    "gold_pages": [
+      7,
+      7
+    ],
+    "section": "experiment"
+  },
+  {
+    "qid": "q131",
+    "question": "What benchmark does the passage cite to demonstrate that general-purpose dense retrievers experience performance degradation in unfamiliar domains?",
+    "gold_chunk_id": "2509.25716v1_3",
+    "gold_paper_id": "2509.25716v1",
+    "gold_pages": [
+      2,
+      2
+    ],
+    "section": "related work"
+  },
+  {
+    "qid": "q132",
+    "question": "What specific legislative act is cited as the source for the multi-chapter rule hierarchy corpus document?",
+    "gold_chunk_id": "2609.31660v1_6",
+    "gold_paper_id": "2609.31660v1",
+    "gold_pages": [
+      3,
+      4
+    ],
+    "section": "related work"
+  },
+  {
+    "qid": "q133",
+    "question": "What specific evaluation subsets are included in the MAIR dataset?",
+    "gold_chunk_id": "2505.21439v1_24",
+    "gold_paper_id": "2505.21439v1",
+    "gold_pages": [
+      8,
+      8
+    ],
+    "section": "experiment"
+  },
+  {
+    "qid": "q134",
+    "question": "What performance improvements does DocPrompting achieve over other methods on EVOR-BENCH?",
+    "gold_chunk_id": "2402.12317v2_18",
+    "gold_paper_id": "2402.12317v2",
+    "gold_pages": [
+      5,
+      6
+    ],
+    "section": "results"
+  },
+  {
+    "qid": "q135",
+    "question": "What vector database is utilized for production environments within the described persistence layer?",
+    "gold_chunk_id": "2603.14541v1_5",
+    "gold_paper_id": "2603.14541v1",
+    "gold_pages": [
+      3,
+      3
+    ],
+    "section": "introduction"
+  },
+  {
+    "qid": "q136",
+    "question": "What framework is used to generate highly accurate predictions for faithfulness?",
+    "gold_chunk_id": "2309.15217v2_16",
+    "gold_paper_id": "2309.15217v2",
+    "gold_pages": [
+      5,
+      5
+    ],
+    "section": "experiment"
+  },
+  {
+    "qid": "q137",
+    "question": "What role does the Knowledge Graph play in the retrieval pipeline?",
+    "gold_chunk_id": "2509.25716v1_5",
+    "gold_paper_id": "2509.25716v1",
+    "gold_pages": [
+      2,
+      3
+    ],
+    "section": "related work"
+  },
+  {
+    "qid": "q138",
+    "question": "What does the HIT@K metric measure when evaluating video summary results?",
+    "gold_chunk_id": "2405.17706v1_7",
+    "gold_paper_id": "2405.17706v1",
+    "gold_pages": [
+      3,
+      3
+    ],
+    "section": "introduction"
+  }
+]
