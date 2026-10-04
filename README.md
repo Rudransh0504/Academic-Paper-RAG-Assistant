@@ -4,7 +4,7 @@ A citation-grounded research assistant for academic papers. Upload PDFs (or use 
 
 ![Dashboard](docs/dashboard.png)
 ![Ask page](docs/ask.png)
-![Compare page](docs/compare.png)
+![Compare page](docs/comparison.png)
 ![Evaluation page](docs/eval.png)
 
 ## Features
