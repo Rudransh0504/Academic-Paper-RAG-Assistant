@@ -19,19 +19,29 @@ class Retriever:
         self.mode, self.pool, self.rerank_pool = mode, pool, rerank_pool
         self._reranker = None
 
-    def search(self, query, k=30, mode=None):
-        mode = mode or self.mode
-        if mode == "vector":
-            return self.vs.search(query, k)
-        if mode == "bm25":
-            return self.bm25.search(query, k)
+    def refresh(self):
+        """Call after chunks are added or removed so BM25 sees the change."""
+        self.bm25 = BM25Store(self.vs.chunks)
 
-        fused = rrf([self.vs.search(query, self.pool),
-                     self.bm25.search(query, self.pool)])
-        if mode == "hybrid":
+    def search(self, query, k=30, mode=None, paper_ids=None):
+        mode = mode or self.mode
+        ids = set(paper_ids) if paper_ids else None
+
+        def fetch(store, n):
+            if ids is None:
+                return store.search(query, n)
+            hits = store.search(query, len(self.vs.chunks))
+            return [r for r in hits if r["paper_id"] in ids][:n]
+
+        if mode == "vector":
+            return fetch(self.vs, k)
+        if mode == "bm25":
+            return fetch(self.bm25, k)
+
+        fused = rrf([fetch(self.vs, self.pool), fetch(self.bm25, self.pool)])
+        if mode == "hybrid" or not fused:
             return fused[:k]
 
-        # hybrid_rerank
         if self._reranker is None:
             self._reranker = Reranker()
         return self._reranker.rerank(query, fused[:self.rerank_pool], k=k)

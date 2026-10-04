@@ -28,9 +28,14 @@ def build_context(chunks):
     return "\n\n".join(parts)
 
 
-def ask(vs, question, k=6):
-    candidates = vs.search(question, k=30)
-    chunks = diversify(candidates, k=k)
+def ask(vs, question, k=6, mode=None, paper_ids=None):
+    candidates = vs.search(question, k=30, mode=mode, paper_ids=paper_ids)
+    if not candidates:
+        return {"question": question,
+                "answer": "No passages were found in the selected papers.",
+                "sources": [], "retrieved": []}
+    per_paper = 2 if not paper_ids else max(2, -(-k // len(paper_ids)))
+    chunks = diversify(candidates, k=k, per_paper=per_paper)
     user_prompt = f"Context passages:\n\n{build_context(chunks)}\n\nQuestion: {question}\n\nAnswer:"
     answer = generate(SYSTEM, user_prompt)
 

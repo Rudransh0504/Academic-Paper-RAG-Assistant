@@ -8,3 +8,6 @@ arxiv
 tqdm
 openai
 python-dotenv
+fast api
+uvicorn[standard]
+python-multipart
