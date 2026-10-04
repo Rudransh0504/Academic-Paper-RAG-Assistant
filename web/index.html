@@ -1,0 +1,252 @@
+<!doctype html>
+<html lang="en" data-theme="dark"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Citrine · Paper Intelligence</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 40 40'%3E%3Crect width='40' height='40' rx='10' fill='%23ff7a1a'/%3E%3Cpath d='M12 12H28L34 19L20 31L6 19Z' fill='white'/%3E%3C/svg%3E">
+<style>
+:root{color-scheme:dark;--bg:#0a0a0b;--bg2:#121214;--fg:#f3efe8;--mut:#9d968a;--glass:rgba(255,255,255,.045);--glass2:rgba(255,255,255,.09);--line:rgba(255,255,255,.1);--acc:#ff7a1a;--acc2:#ffb347;--accsoft:rgba(255,122,26,.15);--accline:rgba(255,122,26,.4);--accglow:rgba(255,122,26,.35);--onacc:#1c0f03;--err:#ff6b5e;--hi:inset 0 1px 0 rgba(255,255,255,.07);--shadow:0 14px 44px rgba(0,0,0,.55);--dot:rgba(255,255,255,.05)}
+:root[data-theme=light]{color-scheme:light;--bg:#fbf4e3;--bg2:#fffaf0;--fg:#2a2118;--mut:#7b6e5a;--glass:rgba(255,251,240,.66);--glass2:rgba(255,255,255,.9);--line:rgba(125,92,40,.17);--acc:#e85d04;--acc2:#ff9a2e;--accsoft:rgba(232,93,4,.11);--accline:rgba(232,93,4,.38);--accglow:rgba(232,93,4,.28);--onacc:#fff;--err:#c92a2a;--hi:inset 0 1px 0 rgba(255,255,255,.95);--shadow:0 14px 40px rgba(150,105,40,.17);--dot:rgba(125,92,40,.08)}
+*{box-sizing:border-box;scrollbar-width:thin;scrollbar-color:var(--line) transparent}
+::selection{background:var(--accline)}
+html,body{height:100%}
+body{margin:0;background-color:var(--bg);background-image:radial-gradient(var(--dot) 1px,transparent 1px);background-size:22px 22px;color:var(--fg);font:15px/1.6 Inter,system-ui,-apple-system,"Segoe UI",sans-serif;overflow:hidden;-webkit-font-smoothing:antialiased}
+body::before,body::after{content:"";position:fixed;z-index:-1;width:560px;height:560px;border-radius:50%;filter:blur(130px);opacity:.26;animation:drift 26s ease-in-out infinite alternate;pointer-events:none}
+body::before{background:var(--acc);top:-200px;right:-160px}
+body::after{background:var(--acc2);bottom:-240px;left:-160px;animation-delay:-13s}
+:root[data-theme=light] body::before,:root[data-theme=light] body::after{opacity:.4}
+@keyframes drift{to{transform:translate(-120px,90px) scale(1.18)}}
+@keyframes up{from{opacity:0;transform:translateY(10px)}}
+@keyframes sh{to{background-position:-200% 0}}
+button{font:inherit;color:inherit;cursor:pointer;-webkit-tap-highlight-color:transparent}
+button:focus-visible,.search:focus-visible,.drop:focus-visible{outline:2px solid var(--acc);outline-offset:2px}
+h1{font-size:36px;line-height:1.12;margin:0 0 12px;letter-spacing:-.03em;font-weight:700}
+h2{margin:0 0 6px;font-size:22px;letter-spacing:-.01em}h3{margin:6px 0 4px;font-size:17px}
+.grad,.bt1{background:linear-gradient(120deg,var(--acc),var(--acc2));-webkit-background-clip:text;background-clip:text;color:transparent}
+.muted,.meta{color:var(--mut);font-size:13px}.err{color:var(--err)}
+.app{display:grid;grid-template-columns:330px 1fr;height:100vh}
+.side{display:flex;flex-direction:column;gap:12px;padding:18px;min-height:0;border-right:1px solid var(--line);background:var(--glass);backdrop-filter:blur(24px) saturate(150%);box-shadow:var(--hi)}
+.main{display:flex;flex-direction:column;min-width:0;min-height:0}
+.brand{display:flex;gap:12px;align-items:center}.bt1{font-weight:700;font-size:19px;letter-spacing:-.02em}
+.logo{width:40px;height:40px;flex:none;filter:drop-shadow(0 6px 14px var(--accglow))}
+.drop{display:flex;flex-direction:column;align-items:center;gap:2px;text-align:center;padding:16px 10px;border:1.5px dashed var(--line);border-radius:16px;background:var(--glass);cursor:pointer;transition:.2s;font-size:13px;color:var(--mut)}
+.drop b{color:var(--fg);font-size:14px}.di{font-size:20px;color:var(--acc)}
+.drop:hover,.drop.over{border-color:var(--acc);background:var(--accsoft);transform:translateY(-1px)}
+.search{width:100%;padding:9px 14px;border-radius:12px;border:1px solid var(--line);background:var(--glass);box-shadow:var(--hi);color:inherit;font:inherit;outline:0;transition:.15s}
+.search::placeholder,textarea::placeholder{color:var(--mut)}
+.search:focus{border-color:var(--acc);box-shadow:0 0 0 4px var(--accsoft)}
+.between{display:flex;justify-content:space-between;align-items:center;gap:8px}
+.plist{flex:1;min-height:0;overflow:auto;display:flex;flex-direction:column;gap:3px;margin:0 -6px;padding:0 6px}
+.pi{display:flex;gap:10px;align-items:flex-start;padding:9px 10px;border:1px solid transparent;border-radius:12px;cursor:pointer;transition:.15s;animation:up .3s both}
+.pi:hover{background:var(--glass)}.pi.on{background:var(--accsoft);border-color:var(--accline)}
+.ck{width:17px;height:17px;border-radius:6px;border:1.5px solid var(--mut);flex:none;margin-top:3px;transition:.15s}
+.pi.on .ck{background:var(--acc);border-color:var(--acc)}
+.pi.on .ck::after{content:"";display:block;width:4px;height:8px;margin:1px 0 0 5px;border:solid var(--onacc);border-width:0 2px 2px 0;transform:rotate(45deg)}
+.pt{flex:1;min-width:0}.ttl{font-size:13.5px;line-height:1.35;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+.pa{display:flex;flex-direction:column;gap:4px}
+@media(hover:hover){.pa{opacity:0;transition:.15s}.pi:hover .pa,.pi.on .pa{opacity:1}}
+.badge,.tag{font-size:11px;font-weight:700;color:var(--onacc);border-radius:7px;padding:1px 8px;background:linear-gradient(180deg,var(--acc2),var(--acc))}
+.pending{opacity:.8}
+.sm{border:1px solid var(--line);background:var(--glass);box-shadow:var(--hi);border-radius:10px;padding:4px 12px;font-size:12.5px;font-weight:500;transition:.15s;backdrop-filter:blur(8px)}
+.sm:hover{border-color:var(--acc);color:var(--acc);background:var(--accsoft);transform:translateY(-1px)}.sm:active{transform:scale(.97)}
+.del:hover{border-color:var(--err);color:var(--err);background:rgba(255,107,94,.1)}
+.top{display:flex;align-items:center;gap:12px;padding:12px 20px;border-bottom:1px solid var(--line);background:var(--glass);backdrop-filter:blur(24px) saturate(150%)}
+.tabs{display:flex;gap:4px;margin:0 auto;padding:4px;background:var(--glass);border:1px solid var(--line);border-radius:14px;box-shadow:var(--hi)}
+.tab{border:0;background:none;padding:6px 18px;border-radius:10px;color:var(--mut);font-weight:500;transition:.15s}
+.tab:hover{color:var(--fg)}.tab.on{background:var(--accsoft);color:var(--acc);box-shadow:inset 0 0 0 1px var(--accline)}
+#theme{width:36px;height:36px;padding:0;border-radius:50%;font-size:16px}
+.menu{display:none}
+.panel{display:none;flex:1;min-height:0}.panel.on{display:flex;flex-direction:column}
+.pad{padding:26px max(18px,calc((100% - 960px)/2));overflow:auto}
+.thread{flex:1;min-height:0;overflow:auto;display:flex;flex-direction:column;gap:16px;padding:24px max(18px,calc((100% - 860px)/2))}
+.composer{padding:10px max(18px,calc((100% - 860px)/2)) 20px}
+.crow{display:flex;flex-wrap:wrap;gap:10px;align-items:center;margin-bottom:10px}
+.seg{display:flex;flex-wrap:wrap;gap:2px;background:var(--glass);border:1px solid var(--line);border-radius:12px;padding:3px;margin-bottom:14px;box-shadow:var(--hi)}
+.crow .seg{margin:0}.seg button{border:0;background:none;padding:4px 12px;border-radius:9px;font-size:13px;color:var(--mut);transition:.15s}
+.seg button:hover{color:var(--fg)}.seg button.on{background:var(--accsoft);color:var(--acc);box-shadow:inset 0 0 0 1px var(--accline)}
+.scope{font-size:12.5px;color:var(--mut);border:1px dashed var(--line);border-radius:999px;padding:2px 12px}
+.scope.on{color:var(--onacc);font-weight:600;border:1px solid transparent;background:linear-gradient(180deg,var(--acc2),var(--acc))}
+.cbox{display:flex;gap:10px;align-items:flex-end;background:var(--glass2);border:1px solid var(--line);border-radius:24px;padding:10px 10px 10px 20px;box-shadow:var(--hi),var(--shadow);backdrop-filter:blur(20px);transition:.2s}
+.cbox:focus-within{border-color:var(--acc);box-shadow:var(--hi),var(--shadow),0 0 0 4px var(--accsoft)}
+textarea{flex:1;border:0;outline:0;background:none;color:inherit;font:inherit;resize:none;max-height:160px;padding:8px 2px}
+.send,.go{border:0;color:var(--onacc);font-weight:600;background:linear-gradient(180deg,var(--acc2),var(--acc));box-shadow:var(--hi),0 6px 18px var(--accglow);transition:transform .15s,box-shadow .2s,filter .2s}
+.send{width:42px;height:42px;border-radius:50%;display:grid;place-items:center;flex:none}.go{padding:10px 22px;border-radius:13px}
+.send:hover,.go:hover{transform:translateY(-1px);filter:brightness(1.07);box-shadow:var(--hi),0 10px 26px var(--accglow)}
+.send:active,.go:active{transform:translateY(1px) scale(.97);box-shadow:var(--hi),0 3px 10px var(--accglow)}
+.send:disabled{opacity:.4;transform:none;box-shadow:none;filter:grayscale(.4)}
+#empty{text-align:center;margin:7vh auto 0;max-width:660px;animation:up .6s both}
+.exs{display:flex;flex-wrap:wrap;gap:8px;justify-content:center;margin-top:20px}
+.ex{border:1px solid var(--line);background:var(--glass);box-shadow:var(--hi);border-radius:999px;padding:8px 16px;font-size:13.5px;backdrop-filter:blur(10px);transition:.15s}
+.ex:hover{border-color:var(--acc);color:var(--acc);background:var(--accsoft);transform:translateY(-2px)}
+.msg{animation:up .35s both}
+.msg.user{align-self:flex-end;max-width:78%;padding:10px 18px;border-radius:20px 20px 6px 20px;background:var(--accsoft);border:1px solid var(--accline)}
+.msg.ai{background:var(--glass);border:1px solid var(--line);border-radius:20px;padding:18px 20px;backdrop-filter:blur(16px) saturate(140%);box-shadow:var(--hi),var(--shadow)}
+.ahead{display:flex;justify-content:space-between;align-items:center;margin-bottom:10px}
+.abody{font:16.5px/1.72 Georgia,"Times New Roman",serif}.abody p{margin:0 0 10px}.abody ul{margin:6px 0 10px 18px;padding:0}
+.abody>*,.abody li{animation:up .5s both;animation-delay:calc(var(--i,0)*80ms)}
+.chip{display:inline-flex;align-items:center;justify-content:center;min-width:20px;height:20px;padding:0 6px;margin:0 2px;border:0;border-radius:10px;font:700 11.5px system-ui;color:var(--onacc);background:linear-gradient(180deg,var(--acc2),var(--acc));vertical-align:1px;transition:transform .15s}
+.chip:hover{transform:translateY(-2px) scale(1.15)}
+.pills{margin-top:6px}.pill{display:inline-flex;gap:6px;align-items:center;border:1px solid var(--line);background:var(--glass);border-radius:999px;padding:3px 12px 3px 4px;font-size:12.5px;margin:4px 6px 0 0;transition:.15s}
+.pill:hover{border-color:var(--acc);background:var(--accsoft)}
+details.ret{margin-top:12px}details.ret summary{cursor:pointer;color:var(--mut);font-size:13px}
+.rr{display:flex;gap:10px;align-items:center;padding:7px 8px;border-radius:10px;cursor:pointer;transition:.15s}.rr:hover{background:var(--accsoft)}
+.rn{width:22px;height:22px;border-radius:7px;background:var(--glass2);display:grid;place-items:center;font-size:12px;flex:none}
+.rr.cited .rn{color:var(--onacc);font-weight:700;background:linear-gradient(180deg,var(--acc2),var(--acc))}
+.rt{flex:1;min-width:0}.rt b{display:block;font-size:13px;font-weight:500;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.bar{width:80px;height:6px;border-radius:3px;background:var(--glass2);overflow:hidden}.bar i{display:block;height:100%;background:linear-gradient(90deg,var(--acc),var(--acc2))}
+.sk{height:12px;border-radius:6px;margin:10px 0;background:linear-gradient(90deg,var(--glass),var(--glass2),var(--glass));background-size:200% 100%;animation:sh 1.2s linear infinite}
+.w90{width:90%}.w80{width:80%}.w70{width:70%}
+.card{background:var(--glass);border:1px solid var(--line);border-radius:18px;padding:16px 18px;margin-bottom:14px;box-shadow:var(--hi);backdrop-filter:blur(14px)}
+.dk{font-size:11.5px;text-transform:uppercase;letter-spacing:.08em;color:var(--acc);font-weight:700;margin-bottom:4px}
+.wrap{overflow:auto;border:1px solid var(--line);border-radius:16px;background:var(--glass);margin-bottom:16px;box-shadow:var(--hi);backdrop-filter:blur(14px)}
+.tbl{border-collapse:separate;border-spacing:0;width:100%;font-size:13.5px}
+.tbl th,.tbl td{padding:10px 12px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top}
+.tbl th{background:var(--glass2);font-weight:600}.tbl tbody th{background:none;text-transform:capitalize;color:var(--acc);white-space:nowrap}
+.br{display:grid;grid-template-columns:140px 1fr 56px;gap:12px;align-items:center;margin:12px 0}
+.bt{height:14px;border-radius:7px;background:var(--glass2);overflow:hidden}
+.bt i{display:block;height:100%;width:0;border-radius:7px;background:linear-gradient(90deg,var(--acc),var(--acc2));transition:width .9s cubic-bezier(.2,.8,.2,1)}
+.br b{text-align:right;font-variant-numeric:tabular-nums}
+.drawer{position:fixed;top:0;right:0;height:100%;width:min(480px,100vw);background:var(--bg2);border-left:1px solid var(--line);box-shadow:var(--shadow);transform:translateX(105%);transition:transform .3s cubic-bezier(.2,.8,.2,1);z-index:30;padding:22px;overflow:auto}
+.drawer.open{transform:none}.x{position:absolute;top:14px;right:14px}
+.pass{font:15px/1.7 Georgia,serif;white-space:pre-wrap;background:var(--glass);border-left:3px solid var(--acc);padding:12px 14px;border-radius:0 12px 12px 0}
+.fld{margin:12px 0}.fld b{text-transform:capitalize;color:var(--acc);font-size:13px}.fld p{margin:2px 0 0}
+#toasts{position:fixed;bottom:20px;left:50%;transform:translateX(-50%);display:flex;flex-direction:column;gap:8px;z-index:50}
+.toast{background:var(--bg2);border:1px solid var(--line);padding:10px 16px;border-radius:14px;box-shadow:var(--shadow);animation:up .3s both;font-size:14px}.toast.bad{border-color:var(--err);color:var(--err)}
+@media(max-width:860px){.app{grid-template-columns:1fr}.side{position:fixed;inset:0 auto 0 0;width:min(340px,88vw);z-index:20;background:var(--bg2);transform:translateX(-102%);transition:transform .3s}.side.open{transform:none}.menu{display:inline-block}.br{grid-template-columns:100px 1fr 50px}}
+</style></head><body>
+<div class="app">
+<aside class="side" id="side">
+ <div class="brand"><svg class="logo" viewBox="0 0 40 40" aria-hidden="true"><defs><linearGradient id="lg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#ffb347"/><stop offset="1" stop-color="#ff6a00"/></linearGradient></defs><rect width="40" height="40" rx="11" fill="url(#lg)"/><path d="M12 12H28L34 19L20 31L6 19Z" fill="#fff" fill-opacity=".95"/><path d="M6 19H34M12 12L16 19L20 12L24 19L28 12M16 19L20 31L24 19" fill="none" stroke="#ff7a1a" stroke-width="1.2" stroke-linejoin="round"/></svg><div><div class="bt1">Citrine</div><div class="meta">Citation-grounded research assistant</div></div></div>
+ <div class="drop" id="drop"><div class="di">⬆</div><b>Drop PDFs here</b><span>or click to upload your own paper</span></div>
+ <input type="file" id="file" accept=".pdf,application/pdf" multiple hidden>
+ <input class="search" id="filter" placeholder="Filter papers…">
+ <div class="between"><span class="meta">Tick papers to focus your questions</span><button class="sm" id="clr">Clear</button></div>
+ <div class="plist" id="plist"></div>
+</aside>
+<div class="main" id="main">
+ <header class="top"><button class="sm menu" id="menu">☰ Papers</button>
+  <nav class="tabs"><button class="tab on" data-t="ask">Ask</button><button class="tab" data-t="cmp">Compare</button><button class="tab" data-t="eval">Evaluation</button></nav>
+  <button class="sm" id="theme" title="Toggle theme">☀</button></header>
+ <section class="panel on" id="ask">
+  <div class="thread" id="thread"><div id="empty"><h1>Ask your papers <span class="grad">anything</span></h1>
+   <p class="muted">Answers are written only from retrieved passages and cite paper and page. Upload your own PDF in the sidebar, tick it, and ask questions about just that paper.</p>
+   <div class="exs"><button class="ex">What are common ways to reduce hallucination in RAG systems?</button><button class="ex">How does Ragas compute the faithfulness score?</button><button class="ex">What limitations do these papers report for dense retrieval?</button><button class="ex">Which papers compare hybrid and dense search?</button></div></div></div>
+  <div class="composer"><div class="crow">
+   <div class="seg" id="modes"><button data-m="hybrid_rerank" class="on" title="BM25 + vectors fused, then cross-encoder reranked">Hybrid + rerank</button><button data-m="hybrid" title="BM25 + vectors fused with RRF">Hybrid</button><button data-m="bm25" title="Keyword search only">BM25</button><button data-m="vector" title="Embedding search only">Vector</button></div>
+   <span class="scope" id="scope"></span></div>
+   <div class="cbox"><textarea id="q" rows="1" placeholder="Ask a question…  (Enter to send, Shift+Enter for a new line, / to focus)"></textarea><button class="send" id="send" title="Send"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 19V5M5 12l7-7 7 7"/></svg></button></div></div>
+ </section>
+ <section class="panel pad" id="cmp"><h2>Compare papers</h2><p class="muted">Tick 2–4 papers in the sidebar, then compare. Uploaded papers are summarized on the fly.</p>
+  <div><button class="go" id="cmpgo">Compare 0 selected</button></div><div id="cout" style="margin-top:18px"></div></section>
+ <section class="panel pad" id="eval"><h2>Retrieval evaluation</h2>
+  <p class="muted">Hand-reviewed question set with strict chunk-level scoring. It is a small benchmark, so tiny gaps are noise, and its questions are name-heavy, which favors BM25.</p>
+  <div class="seg" id="mets"></div><div class="card" id="bars"></div><div class="wrap"><table class="tbl" id="etbl"></table></div></section>
+</div></div>
+<aside class="drawer" id="drawer"><button class="sm x" id="xbtn">✕ Close</button><div id="dbody"></div></aside>
+<div id="toasts"></div>
+<script>
+const $=s=>document.querySelector(s),$$=s=>[...document.querySelectorAll(s)];
+const esc=t=>String(t??'').replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+const FIELDS=['problem','methodology','dataset','results','key_findings','limitations'];
+const MODE_NAMES={hybrid_rerank:'Hybrid + rerank',hybrid:'Hybrid',bm25:'BM25',vector:'Vector'};
+let papers=[],sel=new Set(),msgs={},mid=0,busy=false,mode='hybrid_rerank';
+async function api(path,opt){const r=await fetch(path,opt);if(!r.ok){let m=r.statusText;try{m=(await r.json()).detail||m}catch(e){}throw new Error(typeof m==='string'?m:JSON.stringify(m))}return r.json()}
+const post=(p,b)=>api(p,{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(b)});
+function toast(m,bad){const t=document.createElement('div');t.className='toast'+(bad?' bad':'');t.textContent=m;$('#toasts').append(t);setTimeout(()=>t.remove(),4500)}
+/* theme */
+let saved=null;try{saved=localStorage.getItem('theme')}catch(e){}
+const setTheme=n=>{document.documentElement.dataset.theme=n;$('#theme').textContent=n==='dark'?'☀':'☾';try{localStorage.setItem('theme',n)}catch(e){}};
+setTheme(saved||(matchMedia('(prefers-color-scheme: light)').matches?'light':'dark'));
+$('#theme').onclick=()=>setTheme(document.documentElement.dataset.theme==='dark'?'light':'dark');
+/* tabs */
+function show(t){$$('.panel').forEach(p=>p.classList.toggle('on',p.id===t));$$('.tab').forEach(b=>b.classList.toggle('on',b.dataset.t===t));if(t==='eval')loadEval();$('#side').classList.remove('open')}
+$$('.tab').forEach(b=>b.onclick=()=>show(b.dataset.t));
+$('#menu').onclick=e=>{e.stopPropagation();$('#side').classList.toggle('open')};
+$('#main').addEventListener('click',()=>$('#side').classList.remove('open'));
+/* papers */
+async function loadPapers(){try{papers=await api('/papers');renderPapers()}catch(e){$('#plist').innerHTML=`<p class="err">${esc(e.message)}</p>`}}
+function renderPapers(){
+ const f=$('#filter').value.toLowerCase();
+ const list=papers.filter(p=>!f||((p.title||'')+p.paper_id).toLowerCase().includes(f));
+ $('#plist').innerHTML=list.map(p=>`<div class="pi${sel.has(p.paper_id)?' on':''}" data-id="${esc(p.paper_id)}"><span class="ck"></span><div class="pt"><div class="ttl">${esc(p.title||p.paper_id)}</div><div class="meta">${p.uploaded?'<span class="badge">Your upload</span> ':''}${p.n_pages} pages · ${p.n_chunks} passages</div></div><div class="pa"><button class="sm" data-act="sum">Summary</button>${p.uploaded?'<button class="sm del" data-act="del" title="Remove">✕</button>':''}</div></div>`).join('')||'<p class="muted">No papers match.</p>';
+ const n=sel.size;$('#scope').textContent=n?`Asking ${n} selected paper${n>1?'s':''}`:`Asking all ${papers.length} papers`;$('#scope').classList.toggle('on',n>0);$('#cmpgo').textContent=`Compare ${n} selected`}
+$('#filter').oninput=renderPapers;$('#clr').onclick=()=>{sel.clear();renderPapers()};
+$('#plist').onclick=e=>{const row=e.target.closest('.pi');if(!row||row.classList.contains('pending'))return;const id=row.dataset.id,act=e.target.closest('button')?.dataset.act;
+ if(act==='sum'){openSummary(id);return}if(act==='del'){removePaper(id);return}
+ sel.has(id)?sel.delete(id):sel.add(id);renderPapers()};
+async function removePaper(id){if(!confirm('Remove this uploaded paper?'))return;try{await api('/papers/'+encodeURIComponent(id),{method:'DELETE'});sel.delete(id);toast('Paper removed');await loadPapers()}catch(e){toast(e.message,true)}}
+/* upload */
+async function uploadFiles(files){
+ for(const f of files){
+  if(!f.name.toLowerCase().endsWith('.pdf')){toast(f.name+': only PDF files are supported',true);continue}
+  const ph=document.createElement('div');ph.className='pi pending';ph.innerHTML=`<span class="ck"></span><div class="pt"><div class="ttl">${esc(f.name)}</div><div class="meta">Parsing · embedding · indexing…</div><div class="sk"></div></div>`;$('#plist').prepend(ph);
+  const fd=new FormData();fd.append('file',f);
+  try{const m=await api('/upload',{method:'POST',body:fd});ph.remove();await loadPapers();sel.add(m.paper_id);renderPapers();show('ask');$('#q').focus();toast(`Added “${(m.title||m.paper_id).slice(0,48)}” — ${m.n_chunks} passages indexed. Ask away!`)}
+  catch(e){ph.remove();toast(f.name+': '+e.message,true)}}}
+const dz=$('#drop'),fi=$('#file');dz.onclick=()=>fi.click();fi.onchange=()=>{uploadFiles([...fi.files]);fi.value=''};
+['dragenter','dragover'].forEach(v=>dz.addEventListener(v,e=>{e.preventDefault();dz.classList.add('over')}));
+['dragleave','drop'].forEach(v=>dz.addEventListener(v,e=>{e.preventDefault();dz.classList.remove('over')}));
+dz.addEventListener('drop',e=>uploadFiles([...e.dataTransfer.files]));
+['dragover','drop'].forEach(v=>window.addEventListener(v,e=>e.preventDefault()));
+/* drawer */
+function openDrawer(h){$('#dbody').innerHTML=h;$('#drawer').classList.add('open')}
+const closeDrawer=()=>$('#drawer').classList.remove('open');$('#xbtn').onclick=closeDrawer;
+function openPassage(m,n){const r=msgs[m]?.retrieved?.[n-1];if(!r)return;
+ openDrawer(`<div class="dk">Passage [${n}]</div><h3>${esc(r.title)}</h3><div class="meta">${esc(r.paper_id)} · ${esc(r.section)} · p.${r.page_start}${r.page_end!==r.page_start?'–'+r.page_end:''} · score ${r.score.toFixed(3)}</div><p class="pass">${esc(r.text)}</p>`)}
+async function openSummary(id){const p=papers.find(x=>x.paper_id===id);
+ openDrawer(`<div class="dk">Paper summary</div><h3>${esc(p?.title||id)}</h3><div class="sk w90"></div><div class="sk w80"></div><div class="sk w70"></div><p class="muted">New uploads are summarized on first request, which can take up to 30 seconds.</p>`);
+ try{const d=await api('/analysis/'+encodeURIComponent(id));
+  $('#dbody').innerHTML=`<div class="dk">Paper summary</div><h3>${esc(d.title)}</h3>`+FIELDS.map(f=>`<div class="fld"><b>${f.replace('_',' ')}</b><p>${esc(d[f])}</p></div>`).join('')+'<p class="muted">Extracted by an LLM from the paper text. Verify important details.</p>'}
+ catch(e){$('#dbody').innerHTML+=`<p class="err">${esc(e.message)}</p>`}}
+/* ask */
+function fmt(t){let h=esc(t).replace(/\*\*(.+?)\*\*/g,'<b>$1</b>'),out='',ul=false,k=0;
+ for(const l of h.split('\n')){const m=l.match(/^\s*[*-]\s+(.*)/);
+  if(m){if(!ul){out+='<ul>';ul=true}out+=`<li style="--i:${k++}">${m[1]}</li>`}
+  else{if(ul){out+='</ul>';ul=false}if(l.trim())out+=`<p style="--i:${k++}">${l}</p>`}}
+ return out+(ul?'</ul>':'')}
+const md=(t,rs)=>fmt(t).replace(/\[(\d+)\]/g,(m,n)=>{const r=rs[+n-1];return r?`<button class="chip" data-n="${n}" title="${esc(r.title.slice(0,60))} · p.${r.page_start}">${n}</button>`:m});
+function autosize(){const q=$('#q');q.style.height='auto';q.style.height=Math.min(q.scrollHeight,160)+'px'}
+$('#q').oninput=autosize;$('#q').onkeydown=e=>{if(e.key==='Enter'&&!e.shiftKey){e.preventDefault();send()}};
+$('#send').onclick=()=>send();
+$('#modes').onclick=e=>{const b=e.target.closest('button');if(!b)return;mode=b.dataset.m;$$('#modes button').forEach(x=>x.classList.toggle('on',x===b))};
+async function send(q){
+ q=(q||$('#q').value).trim();if(!q||busy)return;busy=true;$('#send').disabled=true;$('#q').value='';autosize();$('#empty')?.remove();
+ const th=$('#thread'),id=++mid;
+ th.insertAdjacentHTML('beforeend',`<div class="msg user">${esc(q)}</div><div class="msg ai" id="m${id}"><div class="sk w90"></div><div class="sk w70"></div><div class="sk w80"></div><div class="meta">Retrieving passages and writing a cited answer…</div></div>`);
+ th.scrollTop=th.scrollHeight;
+ try{const d=await post('/ask',{question:q,mode,k:6,paper_ids:sel.size?[...sel]:null});msgs[id]=d;renderAnswer(id,d)}
+ catch(e){msgs[id]={question:q};$('#m'+id).innerHTML=`<p class="err">${esc(e.message)}</p><button class="sm" onclick="retry(${id})">Try again</button>`}
+ busy=false;$('#send').disabled=false;th.scrollTop=th.scrollHeight}
+function retry(id){const q=msgs[id].question,el=$('#m'+id);el.previousElementSibling.remove();el.remove();send(q)}
+function renderAnswer(id,d){
+ const rs=d.retrieved,cited=new Set(d.sources.map(s=>s.ref)),sc=rs.map(r=>r.score),lo=Math.min(...sc),hi=Math.max(...sc);
+ const rows=rs.map(r=>`<div class="rr${cited.has(r.ref)?' cited':''}" data-n="${r.ref}"><span class="rn">${r.ref}</span><div class="rt"><b>${esc(r.title)}</b><div class="meta">${esc(r.section)} · p.${r.page_start}${cited.has(r.ref)?' · cited':''}</div></div><div class="bar" title="relative relevance"><i style="width:${hi>lo?(10+90*(r.score-lo)/(hi-lo)).toFixed(0):100}%"></i></div></div>`).join('');
+ const pills=d.sources.map(s=>`<button class="pill" data-n="${s.ref}"><span class="chip">${s.ref}</span>${esc(s.title.slice(0,42))} · p.${s.page_start}</button>`).join('');
+ $('#m'+id).innerHTML=`<div class="ahead"><span class="tag">${MODE_NAMES[d.mode]||d.mode}</span><button class="sm" data-copy="${id}">Copy</button></div><div class="abody">${md(d.answer,rs)}</div>${pills?`<div class="pills">${pills}</div>`:''}${rs.length?`<details class="ret"><summary>${rs.length} passages retrieved · ${cited.size} cited</summary>${rows}</details>`:''}`}
+$('#thread').onclick=e=>{
+ const ex=e.target.closest('.ex');if(ex){send(ex.textContent);return}
+ const c=e.target.closest('[data-copy]');if(c){navigator.clipboard?.writeText(msgs[c.dataset.copy].answer);toast('Answer copied');return}
+ const t=e.target.closest('[data-n]');if(t){openPassage(t.closest('.msg').id.slice(1),+t.dataset.n)}};
+/* compare */
+$('#cmpgo').onclick=async()=>{
+ if(sel.size<2||sel.size>4){toast('Tick 2 to 4 papers in the sidebar first',true);return}
+ const o=$('#cout');o.innerHTML='<div class="sk w90"></div><div class="sk w80"></div><div class="sk w70"></div><p class="muted">Comparing… new uploads are summarized first, up to 30 seconds each.</p>';
+ try{const d=await post('/compare',{paper_ids:[...sel],with_summary:true});
+  o.innerHTML=`<div class="wrap"><table class="tbl"><thead><tr><th></th>${d.papers.map(p=>`<th>${esc((p.title||p.paper_id).slice(0,60))}</th>`).join('')}</tr></thead><tbody>${d.rows.map(r=>`<tr><th>${esc(r.aspect.replace('_',' '))}</th>${r.values.map(v=>`<td>${esc(v)}</td>`).join('')}</tr>`).join('')}</tbody></table></div>`+(d.summary?`<div class="card"><div class="dk">Comparison summary</div>${fmt(d.summary)}</div>`:'')+'<p class="muted">Cells are LLM extractions; “Not stated” means the text did not say.</p>'}
+ catch(e){o.innerHTML=`<p class="err">${esc(e.message)}</p>`}};
+/* evaluation */
+let evalData=null,metric='chunk_MRR';
+const NAMES={vector:'Vector (FAISS)',bm25:'BM25',hybrid:'Hybrid (RRF)',hybrid_rerank:'Hybrid + rerank'};
+const METRICS={'chunk_R@1':'Recall@1','chunk_R@3':'Recall@3','chunk_R@5':'Recall@5','chunk_R@10':'Recall@10','chunk_MRR':'MRR','paper_R@5':'Paper Recall@5'};
+async function loadEval(){if(!evalData){try{evalData=await api('/eval')}catch(e){$('#bars').innerHTML=`<p class="err">${esc(e.message)}</p>`;return}}drawEval()}
+function drawEval(){
+ $('#mets').innerHTML=Object.entries(METRICS).map(([k,v])=>`<button data-k="${k}" class="${k===metric?'on':''}">${v}</button>`).join('');
+ $('#bars').innerHTML=evalData.map(r=>{const v=parseFloat(r[metric]);return `<div class="br"><span>${NAMES[r.mode]||r.mode}</span><div class="bt"><i data-w="${(v*100).toFixed(1)}%"></i></div><b>${v.toFixed(3)}</b></div>`}).join('');
+ requestAnimationFrame(()=>requestAnimationFrame(()=>$$('#bars i').forEach(i=>i.style.width=i.dataset.w)));
+ const cols=Object.keys(METRICS);
+ $('#etbl').innerHTML=`<thead><tr><th>Mode</th>${cols.map(c=>`<th>${METRICS[c]}</th>`).join('')}</tr></thead><tbody>`+evalData.map(r=>`<tr><td>${NAMES[r.mode]||r.mode}</td>${cols.map(c=>`<td>${parseFloat(r[c]).toFixed(3)}</td>`).join('')}</tr>`).join('')+'</tbody>'}
+$('#mets').onclick=e=>{const b=e.target.closest('button');if(b){metric=b.dataset.k;drawEval()}};
+/* keys */
+addEventListener('keydown',e=>{if(e.key==='Escape')closeDrawer();
+ if(e.key==='/'&&!/INPUT|TEXTAREA/.test(document.activeElement.tagName)){e.preventDefault();show('ask');$('#q').focus()}});
+loadPapers();
+</script></body></html>
