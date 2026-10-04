@@ -1,0 +1,10 @@
+{
+  "problem": "Large language models rely on static, flat vector similarity or homogeneous structured memory banks (like graphs and hypergraphs), which cause architectural misalignment, costly disjointed retrieval, hallucinations, and limited multi-hop reasoning and generalization in dynamic environments (p.1).",
+  "methodology": "The paper proposes IGMiRAG, a framework featuring a Hierarchical Heterogeneous Hypergraph (HHHG) to model multi-granular knowledge and deductive pathways, a dual-focus index (DF-Index) combining global HNSW with type-specific local subgraphs, an LLM-based Retrieval-Strategy Parser (RSP) for intuitive strategy generation, and a preference-aware bidirectional diffusion algorithm for adaptive deep mining (p.2, 3, 4, 5).",
+  "dataset": "Six public benchmarks spanning three tasks: Detail Capture (Simple QA) via PopQA; Multi-Hop Reasoning (Multi-Hop QA) via MuSiQue, 2WikiMultihop (2Wiki), and HotpotQA; and Knowledge Explanation (Explanatory QA) via Mix and Pathology (p.6).",
+  "results": "IGMiRAG outperforms the state-of-the-art baseline by an average of 4.8% EM and 5.0% F1 overall (reaching 58.3% EM and 65.9% F1 average), with token costs adapting to task complexity averaging 6.3 k+ (minimum 3.0 k+) (p.1, 6). On MuSiQue and 2WikiMultiHop specifically, it surpasses the second-best method by 4.4%/4.7% and 12.2%/13.4% in EM/F1 respectively (p.6, 7).",
+  "key_findings": "Mimicking human intuition-guided reasoning through an intuition-inspired strategy-diffusion two-stage retrieval paradigm and a preference-aware bidirectional diffusion algorithm improves retrieval precision, reasoning depth, and efficiency simultaneously while mitigating memory fragmentation (p.2, 6).",
+  "limitations": "Not stated",
+  "paper_id": "2602.07525v1",
+  "title": "IGMiRAG: Intuition-Guided Retrieval-Augmented Generation with Adaptive Mining of In-Depth Memory"
+}

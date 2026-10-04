@@ -1,0 +1,10 @@
+{
+  "problem": "There is a significant lack of research on the practical application and industrial adoption of Retrieval-Augmented Generation (RAG) systems in corporate environments (p.1, p.3).",
+  "methodology": "The authors conducted a semi-structured interview study with 13 industry practitioners, following stepwise guidelines and a systematic five-step qualitative procedure (p.1, p.2, p.3). They also performed a rapid literature review to derive 12 implementation-relevant requirements for RAG systems, which were evaluated using descriptive statistics (p.2, p.3, p.4).",
+  "dataset": "Thirteen semi-structured interviews conducted with industry experts from diverse company sizes, domains, and experience levels between early April and early June 2025 (p.3, p.4).",
+  "results": "Current RAG applications are mostly limited to domain-specific QA tasks and remain largely in the prototype stage (p.1, p.2). Industry requirements focus primarily on data protection, security, and quality, while ethics, bias, costs, and scalability receive less attention (p.1, p.2). Data preprocessing remains a major challenge, and system evaluation is predominantly conducted by humans rather than automated methods (p.1, p.2).",
+  "key_findings": "The most common application of RAG is question answering via conversational chat interfaces to facilitate knowledge transfer (p.4). Key goals for adopting RAG include saving time, increasing efficiency, reducing manual information retrieval workloads, and lowering knowledge dependency on specific individuals (p.5). Security and data protection, alongside RAG quality, are viewed as top-priority requirements, whereas ethical considerations and bias mitigation received the lowest relevance ratings (p.5, p.6, p.7).",
+  "limitations": "Not stated",
+  "paper_id": "2508.14066v1",
+  "title": "Retrieval-Augmented Generation in Industry: An Interview Study on Use Cases, Requirements, Challenges, and Evaluation"
+}

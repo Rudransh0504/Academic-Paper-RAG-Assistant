@@ -1,0 +1,10 @@
+{
+  "problem": "Corpus poisoning in Retrieval-Augmented Generation (RAG) pipelines, where adversaries inject malicious documents into the retrieval corpus to manipulate model outputs (p.1).",
+  "methodology": "The paper proposes two complementary retrieval-stage defenses: RAGPart, which leverages dense retrievers' training dynamics by partitioning documents into fragments, embedding them independently, and averaging combinations to mitigate poisoned points; and RAGMask, which identifies and suppresses poisoned documents by selectively masking influential tokens and measuring similarity shifts (p.1, p.2, p.4, p.6).",
+  "dataset": "Two question answering datasets: Natural Questions (NQ), consisting of a corpus of 2,681,468 documents, and Financial Opinion Mining and Question Answering (FIQA), consisting of a corpus of 57,638 documents (p.7).",
+  "results": "Across two benchmarks, four poisoning strategies, and four state-of-the-art retrievers, the proposed defenses consistently reduce attack success rates while preserving utility under benign conditions (p.1). Baseline defenses such as paraphrase-based and perplexity-based methods fail to defend against interpretable poisoning attacks despite being effective against gradient-based attacks (p.8).",
+  "key_findings": "Retrieval-stage defenses can effectively and efficiently mitigate corpus poisoning without requiring modifications to the generation model or relying on strong retriever assumptions (p.2, p.4). Furthermore, intersection-based aggregation leads to a larger drop in utility (SR) compared to majority vote-based aggregation, making it a less ideal choice for practical defenses (p.8).",
+  "limitations": "The ideal k condition for robustness from prior work no longer guarantees robustness when combining aggregation with selecting top-p documents by majority vote, and the intersection-based aggregation severely impacts the success rate (p.5).",
+  "paper_id": "2512.24268v1",
+  "title": "RAGPart & RAGMask: Retrieval-Stage Defenses Against Corpus Poisoning in Retrieval-Augmented Generation"
+}

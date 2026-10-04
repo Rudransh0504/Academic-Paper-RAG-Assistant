@@ -1,0 +1,10 @@
+{
+  "problem": "Many complex questions require nuanced details and context rather than simple factoid answers, forming the task of Complex Answer Retrieval (CAR) (p.1). Some query facets use general language (low-utility facets) that is unlikely to appear verbatim in relevant answers, making them difficult to match (p.1, p.3).",
+  "methodology": "The authors propose two facet utility estimators (heading position and heading frequency) using contextual vectors, a heading independence approach to split the matching phase by query components, and a knowledge graph embedding approach using HolE to calculate entity similarity scores (p.3, p.8, p.10, p.12). These approaches are integrated into a leading neural ranking model (PACRR) (p.4, p.13).",
+  "dataset": "The official TREC CAR dataset (version 1.5) containing a paragraph corpus of approximately 30M paragraphs, using train.fold1-2 for training, test200 for validation, and benchmarkY1test for testing (p.13, p.14).",
+  "results": "The approach performs significantly better than the unmodified neural ranker and other leading CAR techniques, achieving up to a 26% improvement over the next best approach (p.1, p.4).",
+  "key_findings": "Low-utility facets (often corresponding to structural headings) are more difficult to match because they use general terminology that relies on related entities rather than verbatim matches (p.7, p.8). Incorporating heading position, heading frequency, and knowledge graph embeddings into neural rankers improves retrieval performance for these difficult queries (p.4, p.8, p.12).",
+  "limitations": "Not stated",
+  "paper_id": "1811.08772v1",
+  "title": "Overcoming Low-Utility Facets for Complex Answer Retrieval"
+}

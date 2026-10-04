@@ -1,0 +1,10 @@
+{
+  "problem": "Industrial organizations in the energy sector face the irreversible loss of tacit operational knowledge and contextual judgment when senior experts retire, as traditional documentation practices only capture explicit knowledge (p.1, 2).",
+  "methodology": "The paper proposes Expert Mind, a four-layer architecture consisting of multimodal knowledge capture, LLM-driven processing and extraction, vector store persistence, and a conversational query interface that uses Retrieval-Augmented Generation (RAG) (p.1, 2, 3).",
+  "dataset": "Not stated",
+  "results": "As a proposed experimental system, Expert Mind does not yet report empirical results, though anticipated outcomes include a response accuracy greater than 85% and an onboarding duration reduction greater than 20% (p.4, 5).",
+  "key_findings": "The system provides a concrete architecture for expert knowledge preservation, integrates an ethical framework addressing consent and the right to erasure as architectural requirements, and outlines a rigorous evaluation methodology (p.1, 4, 5).",
+  "limitations": "The quality of extracted knowledge is inherently bounded by the quality of capture sessions, the system does not model collective and distributed team knowledge, and the proposed evaluation methodology requires longitudinal data collection (p.5).",
+  "paper_id": "2603.14541v1",
+  "title": "Expert Mind: A Retrieval-Augmented Architecture for Expert Knowledge Preservation in the Energy Sector"
+}

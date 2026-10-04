@@ -1,0 +1,10 @@
+{
+  "problem": "First-stage retrieval of responses for dialogues in conversational search, where the task is to learn a ranking function to retrieve the correct response from the entire collection of available responses given a dialogue context (p.2, 5).",
+  "methodology": "A replicability study evaluating five major findings from passage and document retrieval across three information-seeking dialogue datasets using sparse (BM25, RM3, resp2ctxt, resp2ctxtlu) and dense (zero-shot and fine-tuned bi-encoders with varying negative sampling) retrieval models (p.2, 5-8).",
+  "dataset": "Three information-seeking dialogue datasets: MANtIS, MSDialog, and UDCDSTC8 (p.2, 9).",
+  "results": "Four out of the five evaluated findings (F2, F3, F4, and F5) generalize to the response retrieval for dialogues domain, while F1 does not generalize (p.2, 9-12). Specifically, BM25 with dialogue context expansion (F1) fails to improve performance, whereas document expansion predicting the last utterance (F2), zero-shot dense retrieval with sufficient intermediate training (F3), fine-tuned dense retrieval with target data (F4), and adapted hard negative sampling (F5) show effectiveness (p.9-12).",
+  "key_findings": "Dialogue context expansion (F1) does not outperform the baseline because dialogue contexts are already detailed, but response expansion (F2) improves retrieval especially when generating only the last utterance (p.9-10). Zero-shot dense retrieval (F3) underperforms sparse baselines unless large and diverse intermediate training data is used (p.11). Furthermore, fine-tuned dense models outperform sparse models (F4), and hard negative sampling benefits performance provided proper denoising is applied (p.3, 11-12).",
+  "limitations": "Not stated",
+  "paper_id": "2301.05508v1",
+  "title": "Do the Findings of Document and Passage Retrieval Generalize to the Retrieval of Responses for Dialogues?"
+}

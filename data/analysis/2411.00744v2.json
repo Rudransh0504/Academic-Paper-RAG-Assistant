@@ -1,0 +1,10 @@
+{
+  "problem": "Current RAG systems face challenges including independent chunk retrieval without considering relationships (redundancy and ordering), non-monotonic chunk utility where adding more chunks can degrade quality, and retrieval strategies failing to adapt to the unique characteristics of different queries (p.1-2).",
+  "methodology": "The paper proposes CARROT, a cost-constrained retrieval optimization framework for RAG that adopts a Monte Carlo Tree Search (MCTS) based strategy using a cost-aware utility function and parallel evaluation to find the optimal chunk combination order (p.1, p.5-6). It also incorporates a configuration agent trained via contrastive learning to dynamically predict optimal rerankers and configurations for each query domain (p.1, p.4).",
+  "dataset": "Not stated",
+  "results": "Experimental results demonstrate up to a 30% performance improvement over baseline methods, validating the framework's effectiveness, efficiency, and scalability (p.1, p.2).",
+  "key_findings": "The Optimal Chunk Combination Order Selection problem is proven to be NP-hard (p.3). CARROT effectively addresses inter-chunk correlations, non-monotonic utility, and query intent diversity while minimizing token costs through budget constraints (p.2, p.4).",
+  "limitations": "Not stated",
+  "paper_id": "2411.00744v2",
+  "title": "CARROT: A Learned Cost-Constrained Retrieval Optimization System for RAG"
+}

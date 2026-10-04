@@ -1,0 +1,10 @@
+{
+  "problem": "Large Language Models (LLMs) struggle to adapt to domains where they have insufficient knowledge, such as frequently updated libraries and long-tail programming languages, because existing retrieval-augmented code generation (RACG) pipelines use static knowledge bases with a single source (p.1).",
+  "methodology": "The authors developed EVOR, a pipeline that employs the synchronous evolution of both queries and diverse knowledge bases through multi-round interactions among retrievers, LLMs, and executors (p.1). EVOR constructs a knowledge soup containing web search, documentation, execution feedback, and code snippets, iteratively updating the queries and knowledge base based on execution feedback (p.1, p.3).",
+  "dataset": "EVOR-BENCH, a new benchmark comprising four datasets simulating realistic RACG scenarios: Scipy-M and Tensorflow-M (modified versions of Scipy and Tensorflow libraries), and Ring and Pony (long-tail programming languages) (p.1, p.4).",
+  "results": "EVOR achieves two to four times the execution accuracy compared to other methods like Reflexion and DocPrompting (p.1). Specifically, EVOR achieves an average execution accuracy of 35.3% with ChatGPT and 32.2% with CodeLlama across the four EVOR-BENCH datasets (p.5).",
+  "key_findings": "Both synchronous evolution and diverse knowledge sources are critical to the success of EVOR, and EVOR can be flexibly combined with existing code generation approaches and agent-based methods to yield further performance improvements (p.2, p.6, p.7).",
+  "limitations": "Not stated",
+  "paper_id": "2402.12317v2",
+  "title": "EVOR: Evolving Retrieval for Code Generation"
+}

@@ -1,0 +1,10 @@
+{
+  "problem": "Standard RAG frameworks falter on complex, multi-hop queries that require synthesizing information from disparate sources, and they lack robust mechanisms to systematically identify and fill evidence gaps without propagating noise or hallucinating (p.1-2).",
+  "methodology": "FAIR-RAG introduces an agentic framework featuring an Iterative Refinement Cycle governed by a Structured Evidence Assessment (SEA) module (p.1). The SEA deconstructs the initial query into a checklist of required findings, audits aggregated evidence to identify confirmed facts and explicit gaps, and signals an Adaptive Query Refinement agent to generate targeted sub-queries until sufficient (p.1-2, 6-7).",
+  "dataset": "HotpotQA, 2WikiMultiHopQA, MusiQue, and TriviaQA (p.3)",
+  "results": "FAIR-RAG achieves state-of-the-art performance on complex multi-hop benchmarks, obtaining an F1-score of 0.453 on HotpotQA (surpassing the strongest iterative baseline by 8.3 points), 0.320 on 2WikiMultiHopQA, 0.264 on Musique, and 0.731 on TriviaQA (p.3).",
+  "key_findings": "Performance consistently improves as the number of refinement iterations increases from one to three (e.g., F1 on HotpotQA improves from 0.398 for FAIR-RAG 1 to 0.447 for FAIR-RAG 3), confirming the value of the iterative evidence-gathering loop (p.3). Furthermore, a structured, gap-aware iterative refinement loop with a pre-generation SEA module and dynamic LLM resource allocation significantly enhances accuracy and faithfulness in complex QA tasks (p.2-3, 5).",
+  "limitations": "Not stated",
+  "paper_id": "2510.22344v1",
+  "title": "FAIR-RAG: Faithful Adaptive Iterative Refinement for Retrieval-Augmented Generation"
+}

@@ -1,0 +1,10 @@
+{
+  "problem": "General-purpose large language models struggle with hallucinations and maintaining accuracy, relevance, and faithfulness when applied to sensitive, domain-specific tasks like answering queries related to Quranic studies (p.1).",
+  "methodology": "The study investigates 13 open-source large language models using a Retrieval-Augmented Generation (RAG) framework combined with a descriptive dataset of Quranic surahs, evaluated by human experts across context relevance, answer faithfulness, and answer relevance using a 1-5 Likert scale (p.1, p.2, p.4).",
+  "dataset": "A descriptive dataset derived from a book covering the 114 surahs of the Qur'an (with 20 surahs tested in this preliminary study), containing elements such as number of verses, meaning and reason for the name, general objective, reason for revelation, virtues, and relationships (p.1, p.2).",
+  "results": "Large models consistently outperformed smaller models in capturing query semantics and producing accurate, contextually grounded responses, while the Llama3.2:3b model performed very well on faithfulness (4.619) and relevance (4.857) despite its smaller size (p.1).",
+  "key_findings": "Large models consistently outperform smaller ones in capturing query semantics, but well-optimized smaller architectures like Llama3.2:3b show strong promise in faithfulness and relevance, demonstrating important trade-offs between model size, computational efficiency, and response quality (p.1).",
+  "limitations": "Not stated",
+  "paper_id": "2503.16581v1",
+  "title": "Investigating Retrieval-Augmented Generation in Quranic Studies: A Study of 13 Open-Source Large Language Models"
+}

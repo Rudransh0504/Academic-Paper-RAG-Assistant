@@ -1,0 +1,10 @@
+{
+  "problem": "A semantic gap exists between large language models (LLMs) and retrievers due to differences in their training objectives and architectures, forcing LLMs to passively accept retrieved documents and struggle with distinguishing them using inherent knowledge (p.1).",
+  "methodology": "The paper proposes R2AG, a framework that utilizes nuanced features from retrievers and employs a lightweight, trainable R2-Former model to capture retrieval information (p.1, p.2). A retrieval-aware prompting strategy is then used to integrate this retrieval information into the LLMs' generation process via input embeddings, with joint instruction fine-tuning on query-document matching (QDM) and language modeling (LM) tasks (p.2, p.4, p.5).",
+  "dataset": "Natural Questions (NQ) including NQ-10, NQ-20, and NQ-30, HotpotQA, MuSiQue, 2WikiMultiHopQA (2Wiki), and DuReader (p.5).",
+  "results": "Extensive experiments across five datasets validate the effectiveness, robustness, and efficiency of R2AG, showing significant performance increases over standard RAG and outperforming various enhanced RAG baselines while increasing latency by only 0.8% during inference (p.1, p.2, p.6, p.7).",
+  "key_findings": "Retrieval information serves as an anchor to aid LLMs in the generation process and helps them disentangle irrelevant documents, bridging the semantic gap without needing to modify the content and order of retrieved documents (p.1, p.2, p.7).",
+  "limitations": "Not stated",
+  "paper_id": "2406.13249v2",
+  "title": "R2AG: Incorporating Retrieval Information into Retrieval Augmented Generation"
+}

@@ -1,0 +1,10 @@
+{
+  "problem": "Multi-hop question answering is a knowledge-intensive complex problem where existing chain-like iterative retrieval methods suffer from misleading irrelevant paragraphs and cascading errors caused by local reasoning mistakes (p.1).",
+  "methodology": "The paper proposes Tree of Reviews (ToR), a dynamic tree-based iterative retrieval framework where the root node is the question and subsequent nodes are individual paragraphs evaluated by a paragraph review block to reject, accept, or trigger new searches (p.2, p.3). It incorporates evidence fusion strategies, along with tree-based search optimization methods including relevance pruning, repetitive pruning, CoT expansion, and missing paragraph completion expansion (p.2, p.4, p.5).",
+  "dataset": "HotpotQA with Fullwiki setting, 2Wiki-MultiHopQA, and the answerable subset of MuSiQue (p.5).",
+  "results": "Compared to baseline methods, ToR achieves state-of-the-art performance in both retrieval (recall@15) and response generation (EM and F1) across the three datasets (p.2, p.5, p.6). For instance, with GPT-4-Turbo, ToR's retrieval metrics outperform ITER-RETGEN by 13.3%, 12.0%, and 1.5% on the three datasets, and F1 values improve by 9.2%, 10.3%, and 0.3% (p.6).",
+  "key_findings": "Exploring multiple reasoning paths in a tree structure mitigates cascading errors from single-path mistakes, and pruning strategies effectively reduce useless information interference and lower time costs (p.6, p.7). Furthermore, the missing paragraph completion (MPC) strategy yields the best retrieval performance by leveraging the parametric knowledge of LLMs (p.7), and evidence-based fusion provides optimal response generation (p.7).",
+  "limitations": "As tree depth increases, the number of API calls and time overhead increase non-linearly due to exponential path expansion, and the effective call rate decreases because some unaccepted paragraphs are reviewed multiple times (p.8).",
+  "paper_id": "2404.14464v1",
+  "title": "Tree of Reviews: A Tree-based Dynamic Iterative Retrieval Framework for Multi-hop Question Answering"
+}

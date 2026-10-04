@@ -1,0 +1,10 @@
+{
+  "problem": "Monolithic large language models are restricted by intrinsic constraints in memory, temporal alignment, and factual precision, while existing RAG research and engineering practices are fragmented by a diversity of methodologies, fusion mechanisms, retrieval strategies, and orchestration approaches (p.2, 4).",
+  "methodology": "The study conducts a comprehensive systematic literature review based on established methodologies adapted from Kitchenham and Charters for software engineering and extended for AI/ML fields, synthesizing academic literature, industry reports, and technical implementation guides from 2018 to 2025 (p.2).",
+  "dataset": "The systematic review analyzes academic articles, industry reports, technical documentation, and implementation guides from institutions such as Stanford University, MIT, IBM Research, Microsoft Research, and Google Research/DeepMind (p.2).",
+  "results": "Not stated",
+  "key_findings": "RAG eliminates the necessity for costly model retraining by providing real-time access to updated knowledge bases, improves interpretability through citation traceability, and permits modular plug-and-play compatibility across retriever, reranker, and generator stages (p.2).",
+  "limitations": "The analysis indicates that standardized benchmarks are underutilized while custom evaluation criteria are predominant, minimal knowledge sharing exists between organizations leading to repeated pitfalls, and exhaustive trust frameworks are scarce (p.4).",
+  "paper_id": "2601.05264v1",
+  "title": "Engineering the RAG Stack: A Comprehensive Review of the Architecture and Trust Frameworks for Retrieval Augmented Generation Systems"
+}

@@ -1,0 +1,10 @@
+{
+  "problem": "Current AI reasoning assistants often adopt static or one-size-fits-all approaches that apply interventions uniformly, which can disrupt a user's state of cognitive flow and lead to disengagement (p.1).",
+  "methodology": "The paper proposes context-aware reasoning interventions that dynamically adapt based on real-time user engagement signals and multimodal cues (such as gaze behavior, typing hesitation, and interaction patterns) to support cognitive flow (p.1-3).",
+  "dataset": "Not stated",
+  "results": "Not stated",
+  "key_findings": "The effectiveness of AI interventions depends on three key factors: the type of intervention (e.g., direct feedback versus Socratic questioning), the timing of intervention (avoiding mid-thought interruptions using subtle cues), and the scale of intervention (p.1). Grounding AI-augmented reasoning systems in Flow Theory allows systems to shift from rigid models to adaptive cognitive assistants that support reasoning naturally (p.2).",
+  "limitations": "Not stated",
+  "paper_id": "2504.16021v1",
+  "title": "Navigating the State of Cognitive Flow: Context-Aware AI Interventions for Effective Reasoning Support"
+}

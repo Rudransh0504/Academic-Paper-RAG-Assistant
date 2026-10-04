@@ -1,0 +1,10 @@
+{
+  "problem": "Visual document understanding typically requires separate retrieval and generation models, which doubles memory consumption and system complexity (p.1).",
+  "methodology": "The authors present Hydra, a dual-head approach that provides both ColBERT-style late-interaction retrieval and autoregressive generation from a single vision-language model using a single LoRA adapter that is toggled at inference (p.1, p.2). The retrieval head uses a linear projection and bidirectional attention, while the generation head uses the base model's lm_head and causal attention with KV-cache-aware decoding (p.2, p.5, p.7).",
+  "dataset": "The training mix combines four visual document retrieval datasets totaling 760,984 pairs: vidore/colpali_train_set, openbmb/VisRAG-Ret-Train-Synthetic-data, openbmb/VisRAG-Ret-Train-In-domain-data, and llamaindex/vdr-multilingual-train (p.7). Evaluation uses the test split of vidore/colpali_train_set plus the ViDoRe V1, V2, and V3 MTEB suites (spanning 22 tasks) and four VQA benchmarks (DocVQA, ChartQA, InfoVQA, and TextVQA) (p.8, p.9).",
+  "results": "Hydra cuts peak GPU memory from 28.85 GB to 10.77 GB at the 4B scale (62.7% reduction) and from 5.79 GB to 2.37 GB at the 0.8B scale (59.1%) relative to a co-resident two-model deployment (p.1, p.3). Across 22 ViDoRe tasks, Hydra-4B achieves a mean nDCG@5 of 0.7215, matching a same-recipe single-head baseline with a paired t-test p=0.89 (p.8).",
+  "key_findings": "A bitwise weight audit shows that 426 of 426 language-model weight tensors are byte-for-byte identical to a freshly-loaded base model when LoRA is disabled (p.1, p.9). A controlled ablation demonstrates that GritLM-style joint training fails in its LoRA-on generation mode (collapsing to outputting a single token regardless of image content), confirming that retrieval-only training combined with LoRA toggling is structurally necessary (p.1, p.9, p.10).",
+  "limitations": "Not stated",
+  "paper_id": "2603.28554v3",
+  "title": "Hydra: Unifying Document Retrieval and Generation in a Single Vision-Language Model"
+}

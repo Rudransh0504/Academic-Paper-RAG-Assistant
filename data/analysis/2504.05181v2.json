@@ -1,0 +1,10 @@
+{
+  "problem": "Generative information retrieval (GenIR) models suffer from token-level misalignment because models trained to predict the next token often fail to capture document-level relevance effectively (p.1). While reinforcement learning-based methods like RLRF aim to fix this, they are computationally expensive, complex, require auxiliary reward function optimization, and are often unstable (p.1).",
+  "methodology": "The authors propose direct document relevance optimization (DDRO), a pairwise ranking approach that aligns token-level docid generation with document-level relevance estimation without explicit reward modeling and reinforcement learning (p.1, p.2). The workflow consists of three stages: (1) document identifier (docid) construction using URL/title and product quantization codes, (2) supervised fine-tuning (SFT) of the retrieval model using diverse data pairs, and (3) direct learning-to-rank (L2R) optimization using relevance feedback on a frozen reference policy model (p.4, p.5).",
+  "dataset": "The experiments use the MS MARCO Document Ranking dataset (subset with 320k documents and 360k query-document pairs for training) and the Natural Questions (NQ) dataset (NQ320k version, including 320k query-document pairs sourced from Wikipedia) (p.5, p.6).",
+  "results": "DDRO outperforms reinforcement learning-based methods, achieving a 7.4% improvement in MRR@10 for MS MARCO and a 19.9% improvement for Natural Questions (p.1). It also maintains competitive performance with established baselines on broader metrics like R@10 (p.2).",
+  "key_findings": "DDRO successfully eliminates the need for explicit reward model training and reinforcement learning fine-tuning, thereby reducing computational overhead and improving optimization efficiency (p.2). By integrating pairwise ranking directly into the generative model's optimization pipeline, docid generation inherently aligns with document-level relevance (p.2).",
+  "limitations": "Not stated",
+  "paper_id": "2504.05181v2",
+  "title": "Lightweight and Direct Document Relevance Optimization for Generative Information Retrieval"
+}

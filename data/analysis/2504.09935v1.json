@@ -1,0 +1,10 @@
+{
+  "problem": "The fundamental challenges of generative retrieval (GR) generalization arising from constrained auto-regressive decoding, specifically regarding constraints and beam search, remain unexplored and understudied (p.1).",
+  "methodology": "The study examines the inherent limitations of constrained auto-regressive generation from the perspectives of constraints and beam search within a Bayes-optimal setting where the GR model captures the underlying relevance distribution (p.1). The authors derive theoretical lower bounds on the KL divergence error caused by constraints (p.1-4) and analyze the performance of beam search under sparse relevance distributions (p.1, 4-5).",
+  "dataset": "Experiments are conducted on synthetic and real-world datasets to validate the theoretical findings (p.1, 2).",
+  "results": "For uniform relevance distribution, the KL divergence error has an asymptotic lower bound of roughly 0.05 / (kr - 1) (p.4). For general relevance distributions, the KL divergence lower bound is approximately 0.05 * A / p, where A is the average Simpson diversity index and p is the sampling probability (p.4). Beam search can achieve perfect top-1 precision but suffers from poor top-k recall performance for sparse relevance distributions (p.1, 4-5).",
+  "key_findings": "Constrained auto-regressive decoding introduces an error due to the model's unawareness of future constraints during generation, which depends on the average Simpson diversity index of the relevance distribution (p.1). Beam search relies on marginal distributions of sub-tree sums which can cause non-relevant branches to overtake relevant ones, leading to poor top-k recall (p.4-5). Concentration of the relevance distribution acts as a trade-off factor, improving beam search recall while increasing the marginal distribution mismatch error (p.5).",
+  "limitations": "Not stated",
+  "paper_id": "2504.09935v1",
+  "title": "Constrained Auto-Regressive Decoding Constrains Generative Retrieval"
+}

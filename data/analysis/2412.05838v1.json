@@ -1,0 +1,10 @@
+{
+  "problem": "Traditional single-agent Retrieval-Augmented Generation (RAG) systems struggle when handling diverse and heterogeneous data sources such as relational, document-based, and graph-based databases, leading to performance bottlenecks, token inefficiencies, and reduced query accuracy (p.2, p.9).",
+  "methodology": "The paper proposes a Multi-Agent RAG system divided into three primary phases: query generation by specialized agents (e.g., MySQL, MongoDB, Neo4j agents) using database schemas and few-shot prompts, query execution within a centralized environment utilizing appropriate database drivers, and response synthesis by a central generative agent (p.9-10, p.13).",
+  "dataset": "Not stated",
+  "results": "Not stated",
+  "key_findings": "Delegating tasks to specialized agents within a modular architecture improves query efficiency, reduces token overhead, and enhances response accuracy across complex, heterogeneous data environments (p.2, p.9).",
+  "limitations": "Not stated",
+  "paper_id": "2412.05838v1",
+  "title": "A COLLABORATIVE MULTI-AGENT APPROACH TO RETRIEVAL-AUGMENTED GENERATION ACROSS DIVERSE DATA SOURCES"
+}

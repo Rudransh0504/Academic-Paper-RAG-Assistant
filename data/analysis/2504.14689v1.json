@@ -1,0 +1,10 @@
+{
+  "problem": "Current AI systems and research often overlook the impact of generative AI on human cognitive capabilities by conflating performed and demonstrated critical thinking (p.1, p.2).",
+  "methodology": "This is a position paper that proposes a distinction between performed and demonstrated critical thinking, drawing insights from Douglas Engelbart's intellect augmentation framework and educational research (p.1-4).",
+  "dataset": "Not stated",
+  "results": "Not stated",
+  "key_findings": "The paper distinguishes between performed critical thinking (cognitive processes undertaken independently of AI) and demonstrated critical thinking (processes or products occurring with AI assistance) (p.1-2). Current AI systems and interaction paradigms may enhance demonstrated critical thinking, but they do not necessarily improve performed critical thinking (p.2).",
+  "limitations": "Not stated",
+  "paper_id": "2504.14689v1",
+  "title": "Designing AI Systems that Augment Human Performed vs. Demonstrated Critical Thinking"
+}

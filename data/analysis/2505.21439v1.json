@@ -1,0 +1,10 @@
+{
+  "problem": "Modern information retrieval (IR) models trained exclusively on standard query-passage pairs struggle to effectively interpret and follow explicit user instructions, suffering from an efficiency-effectiveness trade-off (p.1, p.2).",
+  "methodology": "The authors introduce InF-IR, a large-scale training corpus, and InF-Embed, an instruction-aware embedding model optimized through contrastive learning, instruction-query attention mechanisms (self-attention and cross-attention), and a marginal negative sampling strategy with univariate and multivariate conditional objectives (p.1, p.2, p.6, p.7).",
+  "dataset": "InF-IR, which expands MS MARCO v2.1 training pairs into over 38,000 expressive instruction-query-passage triplets as positive samples alongside 77,518 hard negative examples validated by the o3-mini reasoning model (p.1, p.2, p.4).",
+  "results": "Extensive experiments across multiple instruction-based retrieval benchmarks demonstrate that InF-Embed significantly improves instruction-following capability for both embedding-based (+9.0 p-MRR) and auto-regressive language models (+4.2 p-MRR) across different model sizes (p.1, p.2, p.8).",
+  "key_findings": "InF-IR's dual-poisoned hard negative samples and o3-mini validation ensure high-level semantic plausibility and instructional misalignment, while InF-Embed effectively resolves the efficiency-effectiveness trade-off of traditional encoder-only and decoder-only retrieval models (p.1, p.2).",
+  "limitations": "Not stated",
+  "paper_id": "2505.21439v1",
+  "title": "Towards Better Instruction Following Retrieval Models"
+}

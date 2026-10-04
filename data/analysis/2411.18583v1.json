@@ -1,0 +1,10 @@
+{
+  "problem": "Manual literature reviews are time-consuming, tedious, and error-prone due to the vast volume of research articles being released, creating a high demand for automation systems that can generate literature reviews directly from PDF files (p.1).",
+  "methodology": "The research developed and compared three unique end-to-end pipelines using a frequency-based approach with spaCy, a transformer-based approach with Simple T5, and a retrieval-augmented generation (RAG) approach with the Large Language Model GPT-3.5-TURBO-0125 (p.1, p.2, p.3, p.4). A graphical user interface was also created for the best-performing LLM-based system to allow users to upload PDFs and automatically generate a literature review segment (p.1, p.4).",
+  "dataset": "The SciTLDR dataset from Hugging Face, containing 5,400 TLDRs derived from over 3,200 scientific documents (including author-written and expert-derived summaries), was selected for the research experiments (p.2, p.3).",
+  "results": "The GPT-3.5-TURBO-0125 model achieved the highest ROUGE-1 score of 0.364 and ROUGE-2 score of 0.123 (p.5). The transformer model (Simple T5) came in second with a ROUGE-1 score of 0.268, while the frequency-based spaCy model achieved a ROUGE-1 score of 0.257 (p.5).",
+  "key_findings": "The LLM-based RAG approach outperformed both the transformer and frequency-based models in generating literature reviews, proving that large language models are superior to older NLP approaches for this task (p.1, p.5). However, all three considered NLP approaches are capable of producing satisfactory results and coherent literature review segments (p.2, p.5).",
+  "limitations": "Not stated",
+  "paper_id": "2411.18583v1",
+  "title": "Automated Literature Review Using NLP  Techniques and LLM-Based Retrieval-Augmented"
+}

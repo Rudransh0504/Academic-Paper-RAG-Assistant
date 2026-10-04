@@ -1,0 +1,10 @@
+{
+  "problem": "Human cognition faces fundamental processing limitations and working memory constraints that create a gap between perception and reasoning, often leading to cognitive overload and decision-making biases (p.1, p.2). Existing LLMs are predominantly reactive and lack contextual awareness, providing one-size-fits-all responses rather than adapting to users' cognitive processes and task environments (p.1, p.2, p.5).",
+  "methodology": "The authors conducted a preliminary think-aloud study in an exhibition setting where three MPhil or PhD students navigated exhibits, captured and synthesized information for a report, and verbalized their thoughts, strategies, and challenges (p.3, p.4). Interactions were recorded via video, followed by semi-structured interviews to capture reflections on their experience and expectations for AI-driven cognitive support (p.4).",
+  "dataset": "The study recruited three participants who were MPhil or PhD students from the university, each with at least five years of experience in design or development (p.4).",
+  "results": "Findings reveal that participants experienced challenges in structuring contextual information, retrieving knowledge, and leveraging digital tools for context-aware, structured, and proactive engagement (p.2). Participants processed information across multiple modalities (text, video, interactive displays, and physical gestures) but struggled with organizing and retrieving captured photographs and personal notes (p.4, p.5).",
+  "key_findings": "Participants adjusted their engagement strategies based on environmental and social constraints, hesitating to use real-time verbal commentary or overt gestures due to privacy and public discretion (p.5). Participants demonstrated diverse cognitive workflows, with some constructing broad conceptual frameworks first and others adopting a detail-oriented approach before synthesizing insights (p.5).",
+  "limitations": "Not stated",
+  "paper_id": "2504.13684v1",
+  "title": "Intelligent Interaction Strategies for Context-Aware Cognitive Augmentation"
+}

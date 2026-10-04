@@ -1,0 +1,10 @@
+{
+  "problem": "Retrieving evidence from large, heterogeneous, and weakly structured video corpora presents major challenges due to multilingual variability, noisy text extraction, and the need for robust cross-modal reasoning, with existing systems often overlooking spatial and cultural context like landmark reasoning (p.1).",
+  "methodology": "The paper presents LLandMark, a modular multi-agent framework for landmark-aware multimodal video retrieval featuring specialized agents that collaborate across query parsing and planning, landmark reasoning, multimodal retrieval, and reranked answer synthesis (p.1). It includes an LLM-assisted image-to-image pipeline leveraging Gemini 2.5 Flash and an OCR refinement module leveraging Gemini and LlamaIndex to improve Vietnamese text recognition and visual similarity matching (p.1, p.7).",
+  "dataset": "A 250GB video corpus (p.1).",
+  "results": "Experimental results show that LLandMark achieves adaptive, culturally grounded, and explainable retrieval performance (p.1).",
+  "key_findings": "The Landmark Knowledge Agent detects cultural or spatial landmarks and reformulates them into descriptive visual prompts, enhancing CLIP-based semantic matching for Vietnamese scenes (p.1). Additionally, structured retrieval planning augmented with LLM reasoning enables interpretable, flexible, and culturally aware multimedia search (p.7).",
+  "limitations": "Not stated",
+  "paper_id": "2603.02888v1",
+  "title": "LLandMark: A Multi-Agent Framework for Landmark-Aware Multimodal Interactive Video Retrieval*"
+}

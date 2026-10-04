@@ -1,0 +1,10 @@
+{
+  "problem": "Evaluating Retrieval Augmented Generation (RAG) architectures is challenging due to multiple dimensions to consider, and standard evaluations lack reference-free automated methods that do not rely on ground truth human annotations or hidden model probabilities (p.1).",
+  "methodology": "The authors introduce Ragas, a framework for reference-free evaluation that measures three quality aspects\u2014faithfulness, answer relevance, and context relevance\u2014by prompting an LLM (using gpt-3.5-turbo-16k) and utilizing embeddings (text-embedding-ada-002) (p.3). Faithfulness is estimated by extracting statements and verifying if they are supported by the context; answer relevance is measured via cosine similarity between the original question and questions generated from the answer; context relevance is computed based on the ratio of extracted crucial sentences to the total sentences in the context (p.3).",
+  "dataset": "The authors created WikiEval, a new dataset consisting of 50 Wikipedia pages covering events since 2022, with question-context-answer triples annotated with human judgments by two annotators (p.4).",
+  "results": "On the WikiEval dataset, Ragas achieved a pairwise comparison accuracy of 0.95 for faithfulness, 0.78 for answer relevance, and 0.70 for context relevance, outperforming the GPT Score and GPT Ranking baseline methods (p.5).",
+  "key_findings": "Ragas predictions closely align with human judgments, especially for faithfulness and answer relevance, enabling faster evaluation cycles of RAG architectures without requiring ground truth references (p.1, p.5). Context relevance was found to be the hardest quality dimension to evaluate among the three considered aspects (p.5).",
+  "limitations": "Not stated",
+  "paper_id": "2309.15217v2",
+  "title": "Ragas: Automated Evaluation of Retrieval Augmented Generation"
+}
